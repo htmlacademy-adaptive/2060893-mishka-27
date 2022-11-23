@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Никита Смирнов](https://up.htmlacademy.ru/adaptive/27/user/2060893).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Рахманов](https://htmlacademy.ru/profile/flander).
 
 ---
 
