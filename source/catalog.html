@@ -1,0 +1,186 @@
+<!-- catalog.html -->
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мишка - Каталог товаров</title>
+  </head>
+  <body class="page__body">
+
+    <!-- Header -->
+
+    <header class="main-header">
+
+      <!-- Logo -->
+
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image-mobile" src="img/mishka-logo-header-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
+      </a>
+
+      <!-- Navigation -->
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item">
+              <a href="#">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Вязание на заказ
+              </a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__search" href="#">
+                <!-- icon search -->
+                <span class="user-list__text">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__cart" href="#">
+                <!-- icon shop cart -->
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+
+    <main class="main-container">
+
+      <!-- Hero block -->
+
+      <section class="hero">
+        <div class="hero__wrapper">
+          <div class="hero__note note">
+            <b class="note__text">Новые поступления</b> <!-- desktop -->
+            <b class="note__text">Распродажа</b> <!-- desktop -->
+            <span class="note__text note__text--delivery">Бесплатная доставка по России</span> <!-- tablet and desktop -->
+          </div>
+          <h1 class="hero__title">Каталог товаров</h1>
+        </div>
+      </section>
+
+      <!-- Catalog -->
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Карточки товаров.</h2>
+        <div class="catalog__wrapper">
+          <ul class="catalog__list">
+
+            <li class="catalog__item card">
+              <a class="card__link" href="">
+                <img class="card-picture" src="img/product-mobile-1.jpg" width="260" height="195" alt="Вязанная игрушка зайчика.">
+                <h3 class="card__title">Зайчик-попрыгайчик</h3>
+              </a>
+              <dl class="card__info">
+                <dt class="card__feature">Рост</dt>
+                <dd class="card__value">30 см,</dd>
+
+                <dt class="card__feature">вес</dt>
+                <dd class="card__value">200 г</dd>
+
+                <dt class="card__feature visually-hidden">Стоимость</dt>
+                <dd class="card__value">
+                  <b class="card__price">1 200 руб.</b>
+                </dd>
+              </dl>
+            </li>
+
+            <li class="catalog__item card">
+              <a class="card__link" href="">
+                <img class="card-picture" src="img/product-mobile-2.jpg" width="260" height="195" alt="Скрученные полотенца внутри вязанной корзинки.">
+                <h3 class="card__title">Корзинка для белья</h3>
+              </a>
+              <dl class="card__info">
+                <dt class="card__feature">Диаметр</dt>
+                <dd class="card__value">15 см,</dd>
+
+                <dt class="card__feature">высота</dt>
+                <dd class="card__value">10 см</dd>
+
+                <dt class="card__feature visually-hidden">Стоимость</dt>
+                <dd class="card__value">
+                  <b class="card__price">690 руб.</b>
+                </dd>
+              </dl>
+            </li>
+
+            <li class="catalog__item card">
+              <a class="card__link" href="">
+                <img class="card-picture" src="img/product-mobile-3.jpg" width="260" height="195" alt="Вязанная корзинка с плюшевыми игрушками внутри.">
+                <h3 class="card__title">Большая корзинка для игрушек</h3>
+              </a>
+              <dl class="card__info">
+                <dt class="card__feature">Диаметр</dt>
+                <dd class="card__value">30 см,</dd>
+
+                <dt class="card__feature">высота</dt>
+                <dd class="card__value">30 см</dd>
+
+                <dt class="card__feature visually-hidden">Стоимость</dt>
+                <dd class="card__value">
+                  <b class="card__price">1 500 руб.</b>
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Video block -->
+
+      <section class="video">
+        <div class="video__wrapper">
+          <h2 class="video__title">Процесс производства</h2>
+          <img class="video__preview" src="img/video-mobile.jpg" width="260" height="150" alt="Вязанная корзинка на превью видео.">
+          <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <button class="video__button button" type="button">
+            <span class="button-text">Сделать заказ</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <footer class="main-footer">
+        <h2 class="visually-hidden">Дополнительная контактная информация.</h2>
+        <div class="main-footer__wrapper">
+          <div class="main-footer__logo"> <!-- for tablet and desktop -->
+            <!-- logo -->
+          </div>
+          <div class="main-footer__social social">
+            <h3 class="visually-hidden">Социальные сети</h3>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
