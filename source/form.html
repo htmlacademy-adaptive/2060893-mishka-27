@@ -28,14 +28,14 @@
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 Каталог товаров
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="#">
+              <a class="main-nav__link" href="#">
                 Вязание на заказ
               </a>
             </li>
@@ -66,13 +66,13 @@
       <!-- Hero block -->
 
       <section class="hero">
+        <h1 class="hero__title">Вязание на заказ</h1>
         <div class="hero__wrapper">
           <div class="hero__note note">
-            <b class="note__text">Новые поступления</b> <!-- desktop -->
-            <b class="note__text">Распродажа</b> <!-- desktop -->
+            <strong class="note__text">Новые поступления</strong> <!-- desktop -->
+            <strong class="note__text">Распродажа</strong> <!-- desktop -->
             <span class="note__text note__text--delivery">Бесплатная доставка по России</span> <!-- tablet and desktop -->
           </div>
-          <h1 class="hero__title">Вязание на заказ</h1>
         </div>
       </section>
 
@@ -97,13 +97,13 @@
                 <li class="form__item">
                   <label class="form__control">
                     <input class="form__input form__input--radio" type="radio" name="type" value="interior_accessory">
-                    <b class="form__text">Аксессуар для интерьера</b>
+                    <strong class="form__text">Аксессуар для интерьера</strong>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__control">
                     <input class="form__input form__input--radio" type="radio" name="type" value="baby_toy">
-                    <b class="form__text">Детская игрушка</b>
+                    <strong class="form__text">Детская игрушка</strong>
                   </label>
                 </li>
               </ul>
@@ -117,37 +117,37 @@
                 <li class="form__item">
                   <label class="form__control">
                     <input class="form__input form__input--checkbox" type="checkbox" name="color" value="white">
-                    <b class="form__text">Белый</b>
+                    <strong class="form__text">Белый</strong>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__control">
                     <input class="form__input form__input--checkbox" type="checkbox" name="color" value="grey">
-                    <b class="form__text">Серый</b>
+                    <strong class="form__text">Серый</strong>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__control">
                     <input class="form__input form__input--checkbox" type="checkbox" name="color" value="tiffany">
-                    <b class="form__text">Тиффани</b>
+                    <strong class="form__text">Тиффани</strong>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__control">
                     <input class="form__input form__input--checkbox" type="checkbox" name="color" value="black">
-                    <b class="form__text">Черный</b>
+                    <strong class="form__text">Черный</strong>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__control">
                     <input class="form__input form__input--checkbox" type="checkbox" name="color" value="pink">
-                    <b class="form__text">Розовый</b>
+                    <strong class="form__text">Розовый</strong>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__control">
                     <input class="form__input form__input--checkbox" type="checkbox" name="color" value="orange">
-                    <b class="form__text">Оранжевый</b>
+                    <strong class="form__text">Оранжевый</strong>
                   </label>
                 </li>
               </ul>
@@ -160,18 +160,18 @@
               <legend class="form__title">ФИО</legend>
 
               <label class="form__control">
-                <b class="form__text">Имя:</b>
-                <input class="form__form-control" type="text" placeholder="Введите ваше имя*" name="name">
+                <strong class="form__text">Имя:</strong>
+                <input class="form__input" type="text" placeholder="Введите ваше имя*" name="name">
               </label>
 
               <label class="form__control">
-                <b class="form__text">Фамилия:</b>
-                <input class="form__form-control" type="text" placeholder="Укажите фамилию*" name="surname">
+                <strong class="form__text">Фамилия:</strong>
+                <input class="form__input" type="text" placeholder="Укажите фамилию*" name="surname">
               </label>
 
               <label class="form__control">
-                <b class="form__text">Отчество:</b>
-                <input class="form__form-control" type="text" placeholder="Отчество, если желаете" name="patronymic">
+                <strong class="form__text">Отчество:</strong>
+                <input class="form__input" type="text" placeholder="Отчество, если желаете" name="patronymic">
               </label>
             </fieldset>
 
@@ -180,7 +180,7 @@
             <fieldset class="form__group">
               <legend class="form__title">Тел</legend>
               <label class="form__control">
-                <input class="form__form-control" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="telephone">
+                <input class="form__input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="telephone">
               </label>
             </fieldset>
 
@@ -189,7 +189,7 @@
             <fieldset class="form__group">
               <legend class="form__title">E-mail</legend>
               <label class="form__control">
-                <input class="form__form-control" type="email" placeholder="Ваш Email*" name="e-mail">
+                <input class="form__input" type="email" placeholder="Ваш Email*" name="e-mail">
               </label>
             </fieldset>
 
@@ -198,7 +198,7 @@
             <fieldset class="form__group">
               <legend class="form__title">Доп</legend>
               <label class="form__control">
-                <textarea class="form__form-control" placeholder="Опишите все ваши пожелания к заказу" name="comment"></textarea>
+                <textarea class="form__input" placeholder="Опишите все ваши пожелания к заказу" name="comment"></textarea>
               </label>
             </fieldset>
 
@@ -233,7 +233,7 @@
             </ul>
           </div>
           <div class="main-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
+            <strong class="copyright__text">Разработано:</strong>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
         </div>
