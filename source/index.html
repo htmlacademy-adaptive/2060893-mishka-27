@@ -66,20 +66,21 @@
       <section class="hero">
         <div class="hero__wrapper">
           <div class="hero__note note">
-            <b class="note__text">Новые поступления</b> <!-- desktop -->
-            <b class="note__text">Распродажа</b> <!-- desktop -->
+            <strong class="note__text">Новые поступления</strong> <!-- desktop -->
+            <strong class="note__text">Распродажа</strong> <!-- desktop -->
             <span class="note__text note__text--delivery">Бесплатная доставка по России</span> <!-- tablet and desktop -->
           </div>
-          <h1 class="hero__title">Милые штуки ручной работы для дома</h1>
-          <!-- background image -->
-          <button class="hero-button" type="button">
-            <p class="hero-button__title">Предметы интерьера</p>
-            <!-- hero button icon -->
-          </button>
-          <button class="hero-button hero-button--secondary" type="button">
-            <p class="hero-button__title">Детские игрушки</p>
-            <!-- hero button icon -->
-          </button>
+          <h1 class="hero__title">Милые штуки ручной<br>работы для дома</h1>
+          <div class="catalog-hero catalog-hero__wrapper">
+            <button class="catalog-hero__button" type="button">
+              <span class="catalog-hero__title">Предметы интерьера</span>
+              <!-- hero button icon -->
+            </button>
+            <button class="catalog-hero__button catalog-hero__button--secondary" type="button">
+              <span class="catalog-hero__title">Детские игрушки</span>
+              <!-- hero button icon -->
+            </button>
+          </div>
         </div>
       </section>
 
@@ -88,7 +89,7 @@
       <section class="product">
         <div class="product__wrapper">
           <h2 class="product__title">Вязаные корзинки</h2>
-          <b class="product__best">Товар недели</b>
+          <strong class="product__best">Товар недели</strong>
           <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
           <dl class="product__list">
             <div class="product__item">
@@ -108,11 +109,13 @@
               <dd class="product__value">15 см</dd>
             </div>
           </dl>
-          <img class="product__image" width="260" height="315" src="img/triple-set-mobile.jpg">
-          <span class="product__price">Цена: 990 руб.</span>
-          <button class="product__button button" type="button">
-            <span class="button__text">Заказать</span>
-          </button>
+          <div class="product__info">
+            <img class="product__image" width="260" height="315" src="img/triple-set-mobile.jpg">
+            <span class="product__price">Цена: 990 руб.</span>
+            <button class="product__button button" type="button">
+              Заказать
+            </button>
+          </div>
         </div>
       </section>
 
@@ -165,7 +168,7 @@
           <button class="slider__previous" type="button"></button>
           <button class="slider__next" type="button"></button>
           <a class="reviews__button button" href="#">
-            <span class="button__text">Написать</span>
+            Написать
           </a>
         </div>
       </section>
@@ -187,7 +190,7 @@
           </dl>
           <img class="contacts__image" width="320" height="454" src="img/map-mobile@1x.jpg" alt="Местоположение на карте">
           <a class="contacts__button button" href="#">
-            <span class="button__text">Напишите нам</span>
+            Напишите нам
           </a>
         </div>
       </section>
@@ -214,7 +217,7 @@
             </ul>
           </div>
           <div class="main-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
+            <strong class="copyright__text">Разработано:</strong>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
         </div>

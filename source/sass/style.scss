@@ -1,59 +1,31 @@
-@use "advantages.scss";
-@use "button.scss";
-@use "card.scss";
-@use "catalog.scss";
-@use "contacts.scss";
-@use "form.scss";
-@use "hero.scss";
-@use "main-footer.scss";
-@use "main-header.scss";
-@use "main-nav.scss";
-@use "product.scss";
-@use "reviews.scss";
-@use "slider.scss";
-@use "social.scss";
-@use "user-list.scss";
-@use "video.scss";
+// Файл с часто используемыми элементами
+@use "./global/bootstrap.scss";
 
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/opensans.woff") format("woff");
-  src: url("../fonts/opensans.woff2") format("woff2");
-}
+// Базовые блоки
+@use "./components/visually-hidden.scss";
 
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../fonts/opensansbold.woff") format("woff");
-  src: url("../fonts/opensansbold.woff2") format("woff2");
-}
+// Блоки
+@use "./components/advantages.scss";
+@use "./components/button.scss";
+@use "./components/card.scss";
+@use "./components/catalog.scss";
+@use "./components/contacts.scss";
+@use "./components/form.scss";
+@use "./components/hero.scss";
+@use "./components/main-footer.scss";
+@use "./components/main-header.scss";
+@use "./components/main-nav.scss";
+@use "./components/product.scss";
+@use "./components/reviews.scss";
+@use "./components/slider.scss";
+@use "./components/social.scss";
+@use "./components/user-list.scss";
+@use "./components/video.scss";
+@use "./components/link.scss";
+@use "./components/note.scss";
+@use "./components/catalog-hero.scss";
 
-.page {
-  height: 100%;
 
-  .page__body {
-    font-family: "Open Sans", "PT Sans", sans-serif;
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #000000;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-}
-
-.link {
-  text-decoration: none;
-  color: #000000;
-}
 
 
 
