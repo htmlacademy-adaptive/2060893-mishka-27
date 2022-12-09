@@ -1,0 +1,21 @@
+@use "../global/bootstrap.scss";
+
+
+.hero__wrapper {
+  min-height: 490px;
+  background-color: #F1F1F1;
+  background-image: url("../../img/hero-mobile.jpg");
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  margin: 0;
+  padding-top: 73px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+

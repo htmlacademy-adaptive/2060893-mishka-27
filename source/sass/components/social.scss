@@ -1,0 +1,11 @@
+@use "../global/bootstrap.scss";
+
+.social__list {
+  @include bootstrap.list-reset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+  padding-top: 25px;
+  margin-bottom: 59px;
+}

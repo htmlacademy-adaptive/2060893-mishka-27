@@ -1,0 +1,6 @@
+@use "../global/bootstrap.scss";
+
+
+.note__text {
+  @include bootstrap.visually-hidden;
+}

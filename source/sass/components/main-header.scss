@@ -1,0 +1,15 @@
+@use "../global/bootstrap.scss";
+
+.main-header__logo {
+  display: block;
+  text-align: center;
+  margin-top: 22px;
+  margin-bottom: 22px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,61 @@
+@use "../global/bootstrap.scss";
+
+.product__wrapper {
+  margin-top: 30px;
+  @include bootstrap.wrapper-margin;
+  margin-bottom: 73px;
+}
+
+.product__title {
+  margin: 0;
+  padding: 0;
+}
+
+.product__best {
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #63D1BB;
+  margin-top: 3px;
+}
+
+.product__text {
+  color: #444444;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 18px;
+  margin-bottom: 28px;
+}
+
+.product__list {
+  margin-bottom: 30px;
+}
+
+.product__item {
+  display: grid;
+  grid-template-columns: 97px 162px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.product__value {
+  margin: 0;
+}
+
+.product__image {
+  margin-top: 11px;
+}
+
+.product__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product__price {
+  color: #444444;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
