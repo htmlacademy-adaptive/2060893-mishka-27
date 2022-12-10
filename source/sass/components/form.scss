@@ -1,1 +1,53 @@
 @use "../global/bootstrap.scss";
+
+.form__wrapper {
+  @include bootstrap.wrapper-margin;
+}
+
+.form__prompt {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 17px;
+  margin-bottom: 29px;
+}
+
+.form__title {
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63D1BB;
+}
+
+.form__text {
+  line-height: 18px;
+}
+
+.form__list {
+  @include bootstrap.list-reset;
+}
+
+.form__server {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+.form__group {
+  margin: 0;
+  border: none;
+}
+
+.form__list {
+  padding-top: 25px;
+}
+
+.form__warning-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 17px;
+  margin-bottom: 30px;
+}
+
+.form__submit-button {
+  margin-bottom: 55px;
+}

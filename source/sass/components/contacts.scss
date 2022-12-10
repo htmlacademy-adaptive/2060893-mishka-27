@@ -1,16 +1,14 @@
 @use "../global/bootstrap.scss";
 
-.contacts__wrapper {
-  @include bootstrap.wrapper-margin;
-}
-
 .contacts__title {
+  @include bootstrap.wrapper-margin;
   margin-bottom: 28px;
 }
 
 .contacts__list {
   display: grid;
   row-gap: 30px;
+  @include bootstrap.wrapper-margin;
   margin-bottom: 62px;
 }
 
@@ -27,11 +25,12 @@
 }
 
 .contacts__image {
-  display: flex;
   margin-bottom: 41px;
   width: 100%;
 }
 
 .contacts__button {
+  max-width: 260px;
+  @include bootstrap.wrapper-margin;
   margin-bottom: 39px;
 }
