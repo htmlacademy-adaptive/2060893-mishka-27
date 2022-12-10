@@ -14,7 +14,7 @@
 .form__title {
   line-height: 16px;
   text-transform: uppercase;
-  color: #63D1BB;
+  color: #63d1bb;
 }
 
 .form__text {
@@ -23,6 +23,7 @@
 
 .form__list {
   @include bootstrap.list-reset;
+  padding-top: 25px;
 }
 
 .form__server {
@@ -34,10 +35,6 @@
 .form__group {
   margin: 0;
   border: none;
-}
-
-.form__list {
-  padding-top: 25px;
 }
 
 .form__warning-text {

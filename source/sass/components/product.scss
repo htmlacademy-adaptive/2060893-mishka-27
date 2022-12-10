@@ -1,8 +1,8 @@
 @use "../global/bootstrap.scss";
 
 .product__wrapper {
-  margin-top: 30px;
   @include bootstrap.wrapper-margin;
+  margin-top: 30px;
   margin-bottom: 73px;
 }
 
@@ -15,7 +15,7 @@
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #63D1BB;
+  color: #63d1bb;
   margin-top: 3px;
 }
 

@@ -8,21 +8,21 @@
   display: flex;
   flex-direction: column;
 
-    &:not(.catalog-hero__wrapper) {
-      @include bootstrap.wrapper-margin;
-    }
+  &:not(.catalog-hero__wrapper) {
+    @include bootstrap.wrapper-margin;
+  }
 }
 
 .catalog-hero__button {
   padding-top: 25px;
   padding-right: 160px;
   padding-bottom: 30px;
-  background-color: #63D1BB;
+  background-color: #63d1bb;
   border: none;
   cursor: pointer;
 
   &--secondary {
-    background-color: #56C3B2;
+    background-color: #56c3b2;
   }
 }
 

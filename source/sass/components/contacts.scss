@@ -6,9 +6,9 @@
 }
 
 .contacts__list {
+  @include bootstrap.wrapper-margin;
   display: grid;
   row-gap: 30px;
-  @include bootstrap.wrapper-margin;
   margin-bottom: 62px;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .contacts__button {
-  max-width: 260px;
   @include bootstrap.wrapper-margin;
+  max-width: 260px;
   margin-bottom: 39px;
 }
