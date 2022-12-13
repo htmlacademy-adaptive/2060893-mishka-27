@@ -1,9 +1,11 @@
 <!-- catalog.html -->
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Мишка - Каталог товаров</title>
   </head>
   <body class="page__body">
@@ -27,26 +29,26 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link link" href="#">
                 Каталог товаров
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
+              <a class="main-nav__link link" href="form.html">
                 Вязание на заказ
               </a>
             </li>
           </ul>
 
           <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__search" href="#">
+            <li class="main-nav__item user-list__item">
+              <a class="user-list__search link" href="#">
                 <!-- icon search -->
                 <span class="user-list__text">Поиск по сайту</span>
               </a>
             </li>
-            <li class="user-list__item">
-              <a class="user-list__cart" href="#">
+            <li class="main-nav__item user-list__item">
+              <a class="user-list__cart link" href="#">
                 <!-- icon shop cart -->
                 Корзина: пока пуста
               </a>
@@ -63,11 +65,11 @@
       <!-- Hero block -->
 
       <section class="hero">
-        <h1 class="hero__title">Каталог товаров</h1>
         <div class="hero__wrapper">
+          <h1 class="hero__title">Каталог товаров</h1>
           <div class="hero__note note">
-            <b class="note__text">Новые поступления</b> <!-- desktop -->
-            <b class="note__text">Распродажа</b> <!-- desktop -->
+            <strong class="note__text">Новые поступления</strong> <!-- desktop -->
+            <strong class="note__text">Распродажа</strong> <!-- desktop -->
             <span class="note__text note__text--delivery">Бесплатная доставка по России</span> <!-- tablet and desktop -->
           </div>
         </div>
@@ -85,17 +87,26 @@
                 <img class="card__picture" src="img/product-mobile-1.jpg" width="260" height="195" alt="Вязанная игрушка зайчика.">
                 <h3 class="card__title">Зайчик-попрыгайчик</h3>
               </a>
+
+
               <dl class="card__info">
-                <dt class="card__feature">Рост</dt>
-                <dd class="card__value">30 см,</dd>
+                <div class="card__description">
+                  <dt class="card__feature">Рост&nbsp;</dt>
+                  <dd class="card__value">30 см,&nbsp;</dd>
+                </div>
 
-                <dt class="card__feature">вес</dt>
-                <dd class="card__value">200 г</dd>
+                <div class="card__description">
+                  <dt class="card__feature">вес&nbsp;</dt>
+                  <dd class="card__value">200 г</dd>
+                </div>
 
-                <dt class="card__feature visually-hidden">Стоимость</dt>
-                <dd class="card__value">
-                  <b class="card__price">1 200 руб.</b>
-                </dd>
+                <div class="card__description">
+                  <dt class="card__feature visually-hidden">Стоимость</dt>
+                  <dd class="card__value">
+                    <strong class="card__price">1 200 руб.</strong>
+                  </dd>
+                </div>
+
               </dl>
             </li>
 
@@ -105,16 +116,22 @@
                 <h3 class="card__title">Корзинка для белья</h3>
               </a>
               <dl class="card__info">
-                <dt class="card__feature">Диаметр</dt>
-                <dd class="card__value">15 см,</dd>
+                <div class="card__description">
+                  <dt class="card__feature">Диаметр&nbsp;</dt>
+                  <dd class="card__value">15 см,&nbsp;</dd>
+                </div>
 
-                <dt class="card__feature">высота</dt>
-                <dd class="card__value">10 см</dd>
+                <div class="card__description">
+                  <dt class="card__feature">высота&nbsp;</dt>
+                  <dd class="card__value">10 см</dd>
+                </div>
 
-                <dt class="card__feature visually-hidden">Стоимость</dt>
-                <dd class="card__value">
-                  <b class="card__price">690 руб.</b>
-                </dd>
+                <div class="card__description">
+                  <dt class="card__feature visually-hidden">Стоимость</dt>
+                  <dd class="card__value">
+                    <strong class="card__price">690 руб.</strong>
+                  </dd>
+                </div>
               </dl>
             </li>
 
@@ -124,16 +141,22 @@
                 <h3 class="card__title">Большая корзинка для игрушек</h3>
               </a>
               <dl class="card__info">
-                <dt class="card__feature">Диаметр</dt>
-                <dd class="card__value">30 см,</dd>
+                <div class="card__description">
+                  <dt class="card__feature">Диаметр&nbsp;</dt>
+                  <dd class="card__value">30 см,&nbsp;</dd>
+                </div>
 
-                <dt class="card__feature">высота</dt>
-                <dd class="card__value">30 см</dd>
+                <div class="card__description">
+                  <dt class="card__feature">высота&nbsp;</dt>
+                  <dd class="card__value">30 см</dd>
+                </div>
 
-                <dt class="card__feature visually-hidden">Стоимость</dt>
-                <dd class="card__value">
-                  <b class="card__price">1 500 руб.</b>
-                </dd>
+                <div class="card__description">
+                  <dt class="card__feature visually-hidden">Стоимость</dt>
+                  <dd class="card__value">
+                    <strong class="card__price">1 500 руб.</strong>
+                  </dd>
+                </div>
               </dl>
             </li>
           </ul>
@@ -148,7 +171,7 @@
           <img class="video__preview" src="img/video-mobile.jpg" width="260" height="150" alt="Вязанная корзинка на превью видео.">
           <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <button class="video__button button" type="button">
-            <span class="button__text">Сделать заказ</span>
+            Сделать заказ
           </button>
         </div>
       </section>
@@ -176,7 +199,7 @@
             </ul>
           </div>
           <div class="main-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
+            <strong class="copyright__text">Разработано:</strong>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
         </div>

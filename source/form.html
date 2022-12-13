@@ -5,6 +5,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Мишка - Вязание на заказ</title>
   </head>
 
@@ -30,26 +31,26 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
+              <a class="main-nav__link link" href="catalog.html">
                 Каталог товаров
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link link" href="#">
                 Вязание на заказ
               </a>
             </li>
           </ul>
 
           <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__search" href="#">
+            <li class="main-nav__item user-list__item">
+              <a class="user-list__search link" href="#">
                 <!-- icon search -->
                 <span class="user-list__text">Поиск по сайту</span>
               </a>
             </li>
-            <li class="user-list__item">
-              <a class="user-list__cart" href="#">
+            <li class="main-nav__item user-list__item">
+              <a class="user-list__cart link" href="#">
                 <!-- icon shop cart -->
                 Корзина: пока пуста
               </a>
@@ -66,8 +67,8 @@
       <!-- Hero block -->
 
       <section class="hero">
-        <h1 class="hero__title">Вязание на заказ</h1>
         <div class="hero__wrapper">
+          <h1 class="hero__title">Вязание на заказ</h1>
           <div class="hero__note note">
             <strong class="note__text">Новые поступления</strong> <!-- desktop -->
             <strong class="note__text">Распродажа</strong> <!-- desktop -->
@@ -201,12 +202,12 @@
                 <textarea class="form__input" placeholder="Опишите все ваши пожелания к заказу" name="comment"></textarea>
               </label>
             </fieldset>
-
-            <p class="form__warning-text">*Поля обязательны для заполнения</p>
-            <button class="form__submit-button button" type="submit">
-              <span class="button__text">Отправить заказ</span>
-            </button>
           </form>
+
+          <p class="form__warning-text">*Поля обязательны для заполнения</p>
+          <button class="form__submit-button button" type="submit">
+            Отправить заказ
+          </button>
         </div>
       </section>
 

@@ -1,0 +1,36 @@
+@use "../global/bootstrap.scss";
+
+.contacts__title {
+  @include bootstrap.wrapper-margin;
+  margin-bottom: 28px;
+}
+
+.contacts__list {
+  @include bootstrap.wrapper-margin;
+  display: grid;
+  row-gap: 30px;
+  margin-bottom: 62px;
+}
+
+.contacts__item {
+  display: grid;
+  grid-template-columns: 78px 183px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contacts__value {
+  margin: 0;
+}
+
+.contacts__image {
+  margin-bottom: 41px;
+  width: 100%;
+}
+
+.contacts__button {
+  @include bootstrap.wrapper-margin;
+  max-width: 260px;
+  margin-bottom: 39px;
+}

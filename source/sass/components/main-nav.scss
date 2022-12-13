@@ -1,0 +1,17 @@
+@use "../global/bootstrap.scss";
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  // @include bootstrap.visually-hidden;
+}
+
+.main-nav__list {
+  @include bootstrap.list-reset;
+  margin-left: 76px;
+
+  .main-nav__item {
+    padding-top: 28px;
+    padding-bottom: 27px;
+  }
+}

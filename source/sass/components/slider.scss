@@ -1,0 +1,11 @@
+@use "../global/bootstrap.scss";
+
+.slider__control {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+}
+
+.slider__button {
+  grid-column: span 2;
+}
