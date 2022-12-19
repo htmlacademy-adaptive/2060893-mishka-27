@@ -1,0 +1,7 @@
+.catalog__wrapper {
+  margin: 30px;
+}
+
+.catalog__list {
+  @include list-reset;
+}

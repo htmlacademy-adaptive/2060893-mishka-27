@@ -1,0 +1,71 @@
+.reviews__wrapper {
+  @include wrapper-margin;
+  margin-bottom: 89px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 82px;
+    padding-bottom: 50px;
+    margin-bottom: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 174px;
+    padding-bottom: 96px;
+    margin-bottom: 161px;
+  }
+}
+
+.reviews__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 35px;
+  }
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: $text;
+  text-align: left;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 66px;
+  }
+}
+
+.reviews__author {
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.reviews__id {
+  font-weight: 400;
+}

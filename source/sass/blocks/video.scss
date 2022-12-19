@@ -1,0 +1,33 @@
+.video__wrapper {
+  @include wrapper-margin;
+  border: 1px solid #ececec;
+  margin-bottom: 58px;
+  padding-bottom: 33px;
+}
+
+.video__container {
+  margin-right: 34px;
+  margin-left: 34px;
+}
+
+.video__title {
+  margin-top: 21px;
+  margin-left: 91px;
+  margin-bottom: 27px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.video__preview {
+  margin-bottom: 35px;
+}
+
+.video__description {
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 41px;
+}
+
+.video__button {
+
+}

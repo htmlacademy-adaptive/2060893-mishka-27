@@ -1,0 +1,51 @@
+.main-nav {
+  width: 100%;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  // @include visually-hidden;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+
+  .main-nav__item {
+    padding-top: 28px;
+    padding-bottom: 27px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 76px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    gap: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 60px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    @include visually-hidden;
+  }
+}

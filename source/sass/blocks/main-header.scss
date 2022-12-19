@@ -1,0 +1,38 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    position: relative;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 79px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    position: absolute;
+    height: 89px;
+    margin-left: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    height: 89px;
+    margin-left: 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,27 @@
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background: #ffffff;
+  border: 2px solid $text;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: $text;
+
+  &:hover {
+    background: $text;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
+}

@@ -53,6 +53,18 @@
               </a>
             </li>
           </ul>
+
+          <ul class="main-nav__list extra-list">
+            <li class="main-nav__item extra-list__item">
+              <a class="extra-list__link" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item extra-list__item">
+              <a class="extra-list__link" href="#">Распродажа</a>
+            </li>
+            <li class="main-nav__item extra-list__item">
+              <span class="extra-list__delivery">Бесплатная доставка по России</span>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -65,21 +77,16 @@
 
       <section class="hero">
         <div class="hero__wrapper hero__wrapper--image">
-          <div class="hero__note note">
-            <strong class="note__text">Новые поступления</strong> <!-- desktop -->
-            <strong class="note__text">Распродажа</strong> <!-- desktop -->
-            <span class="note__text note__text--delivery">Бесплатная доставка по России</span> <!-- tablet and desktop -->
-          </div>
           <h1 class="hero__title">Милые штуки ручной<br>работы для дома</h1>
           <div class="catalog-hero catalog-hero__wrapper">
-            <button class="catalog-hero__button" type="button">
+            <a class="catalog-hero__button" type="button">
               <span class="catalog-hero__title">Предметы интерьера</span>
               <!-- hero button icon -->
-            </button>
-            <button class="catalog-hero__button catalog-hero__button--secondary" type="button">
+            </a>
+            <a class="catalog-hero__button catalog-hero__button--secondary" type="button">
               <span class="catalog-hero__title">Детские игрушки</span>
               <!-- hero button icon -->
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -88,33 +95,37 @@
 
       <section class="product">
         <div class="product__wrapper">
-          <h2 class="product__title">Вязаные корзинки</h2>
-          <strong class="product__best">Товар недели</strong>
-          <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-          <dl class="product__list">
-            <div class="product__item">
-              <dt class="product__property">Цвет:</dt>
-              <dd class="product__value">тиффани/серый</dd>
-            </div>
-          </dl>
-          <dl class="product__list">
-            <div class="product__item">
-              <dt class="product__property">Диаметр:</dt>
-              <dd class="product__value">25 см</dd>
-            </div>
-          </dl>
-          <dl class="product__list">
-            <div class="product__item">
-              <dt class="product__property">Высота:</dt>
-              <dd class="product__value">15 см</dd>
-            </div>
-          </dl>
+          <div class="product__header">
+            <h2 class="product__title">Вязаные корзинки</h2>
+            <strong class="product__best">Товар недели</strong>
+          </div>
           <div class="product__info">
-            <img class="product__image" width="260" height="315" src="img/triple-set-mobile.jpg">
-            <span class="product__price">Цена: 990 руб.</span>
-            <button class="product__button button" type="button">
-              Заказать
-            </button>
+            <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+            <dl class="product__list">
+              <div class="product__item">
+                <dt class="product__property">Цвет:</dt>
+                <dd class="product__value">тиффани/серый</dd>
+              </div>
+            </dl>
+            <dl class="product__list">
+              <div class="product__item">
+                <dt class="product__property">Диаметр:</dt>
+                <dd class="product__value">25 см</dd>
+              </div>
+            </dl>
+            <dl class="product__list">
+              <div class="product__item">
+                <dt class="product__property">Высота:</dt>
+                <dd class="product__value">15 см</dd>
+              </div>
+            </dl>
+            <div class="product__content">
+              <img class="product__image" width="260" height="315" src="img/triple-set-mobile.jpg" alt="Три вязнных корзинки разного размера, вложенные друг в друга">
+              <span class="product__price">Цена: 990 руб.</span>
+              <button class="product__button button" type="button">
+                Заказать
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -158,10 +169,11 @@
               <div class="reviews__info">
                 <p class="reviews__text">
                   Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-                  <br>у популярных инстамамочек.<br>В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                  <br>и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+                  у популярных инстамамочек.В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                  и мои фотографии сразу стали более стильными, а также набирают больше лайков!
                 </p>
-                <cite class="reviews__author">Анастасия Красильникова
+                <cite class="reviews__author">
+                  <span>Анастасия Красильникова</span>
                   <span class="reviews__id">@misssssiskras</span>
                 </cite>
               </div>
