@@ -431,7 +431,7 @@ body {
 .form__title {
   line-height: 16px;
   text-transform: uppercase;
-  color: #63D1BB;
+  color: #63d1bb;
   padding: 0;
 }
 
@@ -526,7 +526,7 @@ body {
 
 @media (min-width: 768px) {
   .form__input {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 19px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
@@ -806,7 +806,7 @@ body {
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #63D1BB;
+  color: #63d1bb;
   margin-top: 3px;
 }
 @media (min-width: 768px) {
@@ -1201,7 +1201,7 @@ body {
   padding-left: 30px;
   padding-right: 0;
   padding-bottom: 30px;
-  background-color: #63D1BB;
+  background-color: #63d1bb;
   border: none;
   cursor: pointer;
 }
