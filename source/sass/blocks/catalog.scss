@@ -1,7 +1,30 @@
 .catalog__wrapper {
-  margin: 30px;
+  @include wrapper-margin;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .catalog__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 51px;
+  }
 }
