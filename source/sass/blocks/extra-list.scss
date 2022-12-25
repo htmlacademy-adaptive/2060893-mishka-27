@@ -2,22 +2,37 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: block;
+    position: absolute;
+    left: auto;
+    right: 0;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     position: absolute;
-    top: 70px;
+    top: 109px;
+    left: 0;
   }
 }
 
 .extra-list__link {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
 .extra-list__delivery {
   font-size: 15px;
   color: $text;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    white-space: nowrap;
+    left: 800px;
+  }
 }

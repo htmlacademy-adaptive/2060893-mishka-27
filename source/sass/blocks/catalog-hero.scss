@@ -20,7 +20,7 @@
   padding-bottom: 30px;
   background-color: $main-color;
   border: none;
-  cursor: pointer;
+  text-decoration-line: none;
 
   &--secondary {
     background-color: #56c3b2;
@@ -33,7 +33,7 @@
 
 .catalog-hero__title {
   font-family: "Open Sans", sans-serif;
-  color: #ffffff;
+  color: $white;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
