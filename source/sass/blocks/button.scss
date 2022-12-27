@@ -1,12 +1,11 @@
-@use "../global/bootstrap.scss";
 
 .button {
   display: block;
   box-sizing: border-box;
   padding-top: 14px;
   padding-bottom: 14px;
-  background: #ffffff;
-  border: 2px solid #444444;
+  background: $white;
+  border: 2px solid $text;
   width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -15,11 +14,11 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  color: #444444;
+  color: $text;
 
   &:hover {
-    background: #444444;
-    color: #ffffff;
+    background: $text;
+    color: $white;
   }
 
   &:active {

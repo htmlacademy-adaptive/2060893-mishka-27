@@ -41,17 +41,29 @@
           </ul>
 
           <ul class="main-nav__list user-list">
-            <li class="main-nav__item user-list__item">
+            <li class="user-list__item">
               <a class="user-list__search link" href="#">
                 <!-- icon search -->
                 <span class="user-list__text">Поиск по сайту</span>
               </a>
             </li>
-            <li class="main-nav__item user-list__item">
+            <li class="user-list__item">
               <a class="user-list__cart link" href="#">
                 <!-- icon shop cart -->
                 Корзина: пока пуста
               </a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__list extra-list">
+            <li class="extra-list__item">
+              <a class="extra-list__link" href="#">Новые поступления</a>
+            </li>
+            <li class="extra-list__item">
+              <a class="extra-list__link" href="#">Распродажа</a>
+            </li>
+            <li class="extra-list__item">
+              <span class="extra-list__delivery">Бесплатная доставка по России</span>
             </li>
           </ul>
         </div>
@@ -66,12 +78,7 @@
 
       <section class="hero">
         <div class="hero__wrapper">
-          <h1 class="hero__title">Каталог товаров</h1>
-          <div class="hero__note note">
-            <strong class="note__text">Новые поступления</strong> <!-- desktop -->
-            <strong class="note__text">Распродажа</strong> <!-- desktop -->
-            <span class="note__text note__text--delivery">Бесплатная доставка по России</span> <!-- tablet and desktop -->
-          </div>
+          <h1 class="hero__title hero__title--inner">Каталог товаров</h1>
         </div>
       </section>
 
@@ -82,50 +89,50 @@
         <div class="catalog__wrapper">
           <ul class="catalog__list">
 
+            <!-- card product -->
+
             <li class="catalog__item card">
-              <a class="card__link" href="">
-                <img class="card__picture" src="img/product-mobile-1.jpg" width="260" height="195" alt="Вязанная игрушка зайчика.">
-                <h3 class="card__title">Зайчик-попрыгайчик</h3>
-              </a>
-
-
+              <img class="card__picture" src="img/product-mobile-1.jpg" width="260" height="195" alt="Вязанная игрушка зайчика.">
               <dl class="card__info">
-                <div class="card__description">
-                  <dt class="card__feature">Рост&nbsp;</dt>
-                  <dd class="card__value">30 см,&nbsp;</dd>
-                </div>
+                <div class="card__about">
+                  <a class="card__link" href="">
+                    <h3 class="card__title">Зайчик-попрыгайчик</h3>
+                  </a>
+                  <div class="card__description">
+                    <dt class="card__feature">Рост&nbsp;</dt>
+                    <dd class="card__value">30 см,&nbsp;</dd>
+                  </div>
 
-                <div class="card__description">
-                  <dt class="card__feature">вес&nbsp;</dt>
-                  <dd class="card__value">200 г</dd>
+                  <div class="card__description">
+                    <dt class="card__feature">вес&nbsp;</dt>
+                    <dd class="card__value">200 г</dd>
+                  </div>
                 </div>
-
                 <div class="card__description">
                   <dt class="card__feature visually-hidden">Стоимость</dt>
                   <dd class="card__value">
                     <strong class="card__price">1 200 руб.</strong>
                   </dd>
                 </div>
-
               </dl>
             </li>
 
             <li class="catalog__item card">
-              <a class="card__link" href="">
-                <img class="card-picture" src="img/product-mobile-2.jpg" width="260" height="195" alt="Скрученные полотенца внутри вязанной корзинки.">
-                <h3 class="card__title">Корзинка для белья</h3>
-              </a>
+              <img class="card-picture" src="img/product-mobile-2.jpg" width="260" height="195" alt="Скрученные полотенца внутри вязанной корзинки.">
               <dl class="card__info">
-                <div class="card__description">
-                  <dt class="card__feature">Диаметр&nbsp;</dt>
-                  <dd class="card__value">15 см,&nbsp;</dd>
+                <div class="card__about">
+                  <a class="card__link" href="">
+                    <h3 class="card__title">Корзинка для белья</h3>
+                  </a>
+                  <div class="card__description">
+                    <dt class="card__feature">Диаметр&nbsp;</dt>
+                    <dd class="card__value">15 см,&nbsp;</dd>
+                  </div>
+                  <div class="card__description">
+                    <dt class="card__feature">высота&nbsp;</dt>
+                    <dd class="card__value">10 см</dd>
+                  </div>
                 </div>
-
-                <div class="card__description">
-                  <dt class="card__feature">высота&nbsp;</dt>
-                  <dd class="card__value">10 см</dd>
-                </div>
-
                 <div class="card__description">
                   <dt class="card__feature visually-hidden">Стоимость</dt>
                   <dd class="card__value">
@@ -136,21 +143,21 @@
             </li>
 
             <li class="catalog__item card">
-              <a class="card__link" href="">
-                <img class="card-picture" src="img/product-mobile-3.jpg" width="260" height="195" alt="Вязанная корзинка с плюшевыми игрушками внутри.">
-                <h3 class="card__title">Большая корзинка для игрушек</h3>
-              </a>
+              <img class="card-picture" src="img/product-mobile-3.jpg" width="260" height="195" alt="Вязанная корзинка с плюшевыми игрушками внутри.">
               <dl class="card__info">
-                <div class="card__description">
-                  <dt class="card__feature">Диаметр&nbsp;</dt>
-                  <dd class="card__value">30 см,&nbsp;</dd>
+                <div class="card__about">
+                  <a class="card__link" href="">
+                    <h3 class="card__title">Большая корзинка для игрушек</h3>
+                  </a>
+                  <div class="card__description">
+                    <dt class="card__feature">Диаметр&nbsp;</dt>
+                    <dd class="card__value">30 см,&nbsp;</dd>
+                  </div>
+                  <div class="card__description">
+                    <dt class="card__feature">высота&nbsp;</dt>
+                    <dd class="card__value">30 см</dd>
+                  </div>
                 </div>
-
-                <div class="card__description">
-                  <dt class="card__feature">высота&nbsp;</dt>
-                  <dd class="card__value">30 см</dd>
-                </div>
-
                 <div class="card__description">
                   <dt class="card__feature visually-hidden">Стоимость</dt>
                   <dd class="card__value">
@@ -169,10 +176,12 @@
         <div class="video__wrapper">
           <h2 class="video__title">Процесс производства</h2>
           <img class="video__preview" src="img/video-mobile.jpg" width="260" height="150" alt="Вязанная корзинка на превью видео.">
-          <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="video__button button" type="button">
-            Сделать заказ
-          </button>
+          <div class="video__container">
+            <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <button class="video__button button" type="button">
+              Сделать заказ
+            </button>
+          </div>
         </div>
       </section>
 

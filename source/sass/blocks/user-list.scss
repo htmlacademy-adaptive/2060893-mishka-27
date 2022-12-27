@@ -1,0 +1,20 @@
+.user-list {
+  @media (min-width: $tablet-width) {
+    order: -1;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+    margin: 0;
+  }
+}
+
+.user-list__item {
+  @media (max-width: $tablet-width) {
+
+    padding-top: 28px;
+    padding-bottom: 27px;
+    padding-left: 46px;
+  }
+}

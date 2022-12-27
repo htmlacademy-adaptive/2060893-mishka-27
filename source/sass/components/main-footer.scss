@@ -1,9 +1,0 @@
-@use "../global/bootstrap.scss";
-
-.main-footer {
-  background-color: #f1f1f1;
-}
-
-.main-footer__wrapper {
-  @include bootstrap.wrapper-margin;
-}

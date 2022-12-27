@@ -1,1 +1,28 @@
-// Начните писать стили здесь
+// Файл с часто используемыми элементами
+@import "./global/mixins.scss"; // миксины
+@import "./global/fonts.scss"; // шрифты
+@import "./global/variables.scss"; // переменные
+@import "./global/base.scss"; // глобальные стили
+
+// Блоки
+@import "./blocks/advantages.scss";
+@import "./blocks/button.scss";
+@import "./blocks/card.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/form.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/product.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/social.scss";
+@import "./blocks/user-list.scss";
+@import "./blocks/video.scss";
+@import "./blocks/link.scss";
+@import "./blocks/catalog-hero.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/extra-list.scss";

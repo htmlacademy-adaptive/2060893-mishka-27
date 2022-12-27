@@ -1,0 +1,14 @@
+.main-footer {
+  background-color: $whitef1;
+}
+
+.main-footer__wrapper {
+  @include wrapper-margin;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
+}

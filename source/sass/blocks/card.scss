@@ -1,0 +1,66 @@
+.card {
+  border: 1px solid #ececec;
+  min-width: 260px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto;
+    grid-template-rows: 2fr 1fr;
+  }
+}
+
+.card__link {
+  text-decoration-line: none;
+}
+
+.card__title {
+  font-size: 17px;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.card__info {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 41px;
+  margin-top: 0;
+  margin-right: 28px;
+  margin-bottom: 25px;
+  margin-left: 28px;
+}
+
+.card__about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__description {
+  display: flex;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+}
+
+.card__price {
+  font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.card__value {
+  margin: 0;
+  padding-right: 1px;
+}

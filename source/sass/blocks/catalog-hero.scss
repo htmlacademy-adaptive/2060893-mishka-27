@@ -1,0 +1,48 @@
+.catalog-hero__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &:not(.catalog-hero__wrapper) {
+    @include wrapper-margin;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include wrapper-margin;
+    flex-direction: row;
+  }
+}
+
+.catalog-hero__button {
+  display: flex;
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-right: 0;
+  padding-bottom: 30px;
+  background-color: $main-color;
+  border: none;
+  text-decoration-line: none;
+
+  &--secondary {
+    background-color: #56c3b2;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.catalog-hero__title {
+  font-family: "Open Sans", sans-serif;
+  color: $white;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  margin-right: auto;
+  text-align: left;
+  max-width: 130px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

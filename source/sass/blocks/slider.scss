@@ -1,5 +1,3 @@
-@use "../global/bootstrap.scss";
-
 .slider__control {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8,4 +6,11 @@
 
 .slider__button {
   grid-column: span 2;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 175px;
+    top: 85px;
+    right: 0;
+  }
 }
