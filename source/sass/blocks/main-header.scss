@@ -1,9 +1,10 @@
 .main-header {
-  @include wrapper-margin;
+  position: relative;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    @include wrapper-margin;
     flex-direction: row;
     position: relative;
   }

@@ -13,6 +13,7 @@
     position: absolute;
     top: 109px;
     left: 0;
+    gap: 60px;
   }
 }
 
@@ -23,6 +24,8 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    text-decoration: none;
+    color: $black;
   }
 }
 
@@ -33,6 +36,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     white-space: nowrap;
-    left: 800px;
+    top: 0;
+    right: 0;
   }
 }
