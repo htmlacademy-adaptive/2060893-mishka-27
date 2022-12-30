@@ -5,6 +5,14 @@
   @media (min-width: $tablet-width) {
     min-height: 627px;
   }
+
+  &--catalog {
+    min-height: auto;
+  }
+
+  &--form {
+    min-height: auto;
+  }
 }
 
 .hero__wrapper--image {
@@ -44,7 +52,14 @@
 }
 
 .hero__title--inner {
+  padding-bottom: 73px;
+
   @media (min-width: $tablet-width) {
+    padding-top: 102px;
     padding-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 96px;
   }
 }

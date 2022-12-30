@@ -1,5 +1,6 @@
 .catalog__wrapper {
   @include wrapper-margin;
+  margin-top: 30px;
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
