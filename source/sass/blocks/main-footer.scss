@@ -4,11 +4,43 @@
 
 .main-footer__wrapper {
   @include wrapper-margin;
+  position: relative;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 51px;
     padding-bottom: 58px;
+  }
+
+  &::before {
+    @media (max-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid #E5E5E5;
+      width: 100%;
+      top: 80px;
+    }
+  }
+}
+
+.main-footer__link {
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__logo {
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }

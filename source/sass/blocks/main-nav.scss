@@ -40,8 +40,13 @@
 }
 
 .main-nav__wrapper {
+  position: absolute;
+  background-color: $white;
+  width: 100%;
+
   @media (min-width: $tablet-width) {
     display: flex;
+    position: static;
   }
 
   @media (min-width: $desktop-width) {

@@ -31,10 +31,22 @@
 }
 
 .form__title {
+  position: relative;
   line-height: 16px;
   text-transform: uppercase;
   color: $main-color;
   padding: 0;
+
+  &::after {
+    @media (max-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid $main-color;
+      width: 80%;
+      left: 60px;
+      bottom: 50%;
+    }
+  }
 }
 
 .form__text {

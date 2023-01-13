@@ -74,6 +74,18 @@
   }
 }
 
+.product__list {
+  position: relative;
+}
+
+.product__list::after {
+  content:  "";
+  position: absolute;
+  border-bottom: 1px solid #ececec;
+  width: 100%;
+  top: 32px;
+}
+
 .product__list:not(:last-of-type) {
   margin-bottom: 30px;
 }
@@ -148,6 +160,7 @@
 }
 
 .product__info {
+
   @media (min-width: $tablet-width) {
     width: 42%;
   }

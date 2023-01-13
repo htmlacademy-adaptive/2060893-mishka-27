@@ -4,11 +4,31 @@
   justify-content: center;
   align-items: center;
   gap: 29px;
-  padding-top: 25px;
-  margin-bottom: 59px;
+  padding-top: 30px;
+  margin-bottom: 58px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  width: 28px;
+  height: 22px;
+}
+
+.social__icon {
+  color: #231f20;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: #46c1ae;
+    opacity: 0.3;
   }
 }

@@ -6,6 +6,39 @@
     margin-bottom: 105px;
     padding-top: 79px;
   }
+
+  // &::before {
+  //   @media (min-width: $tablet-width) {
+  //     content: "";
+  //     position: absolute;
+  //     background-image: url("../../img/flag.svg");
+  //     background-repeat: no-repeat;
+  //     width: 47px;
+  //     height: 81px;
+  //     top: 0;
+  //     right: 0;
+  //   }
+  // }
+}
+
+.contacts iframe {
+  border: none;
+  display: block;
+  margin-bottom: 41px;
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 527px;
+    height: 457px;
+  }
 }
 
 .contacts__title {
@@ -45,6 +78,7 @@
     flex-direction: column;
     margin-left: 111px;
     margin-bottom: 84px;
+    width: 340px;
   }
 }
 
@@ -64,24 +98,35 @@
 
 .contacts__value {
   margin: 0;
-}
 
-.contacts__image {
-  margin-bottom: 41px;
-  width: 100%;
-  max-width: 768px;
-  object-fit: cover;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
+  &--email {
+    position: relative;
   }
 
-  @media (min-width: $desktop-width) {
+  &--email::after {
+    content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 527px;
-    height: 457px;
+    border-bottom: 1px solid $main-color;
+    width: 167px;
+    left: 0;
+    bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 204px;
+      bottom: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 0;
+    }
+  }
+
+  &--email:hover {
+    color: #46c1ae;
+  }
+
+  &--email:active {
+    opacity: 0.1;
   }
 }
 

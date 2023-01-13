@@ -1,6 +1,25 @@
-
 .copyright__text {
   font-size: 19px;
   line-height: 18px;
-  margin-right: 55px;
+  color: $black;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  text-decoration: none;
+
+  &:hover .copyright__icon {
+    color: #46c1ae;
+  }
+
+  &:active .copyright__icon {
+    opacity: 0.3;
+  }
+}
+
+.copyright__icon {
+  color: $main-color;
 }

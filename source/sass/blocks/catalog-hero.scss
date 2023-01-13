@@ -14,20 +14,36 @@
 
 .catalog-hero__button {
   display: flex;
+  position: relative;
   padding-top: 25px;
   padding-left: 30px;
   padding-right: 0;
-  padding-bottom: 30px;
-  background-color: $main-color;
+  padding-bottom: 31px;
   border: none;
   text-decoration-line: none;
 
-  &--secondary {
+  &--interior {
+    background-color: $main-color;
+
+    &:hover {
+      background-color: #59D5BC;
+      padding-bottom: 38px;
+    }
+  }
+
+  &--toys {
     background-color: #56c3b2;
+
+    &:hover {
+      background-color: #46C1AE;
+      padding-bottom: 38px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    padding-left: 37px;
+    padding-bottom: 34px;
   }
 }
 
@@ -44,5 +60,36 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.catalog-hero__icon {
+  position: absolute;
+  top: 23px;
+  right: 36px;
+  color: #149080;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+    right: 36px;
+  }
+
+  &--secondary {
+    top: 21px;
+    right: 27px;
+
+    @media (min-width: $tablet-width) {
+      top: 31px;
+      right: 34px;
+    }
   }
 }
