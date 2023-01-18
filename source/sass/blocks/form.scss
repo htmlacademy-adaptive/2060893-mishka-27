@@ -159,7 +159,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      gap: 26px
+      gap: 26px;
     }
   }
 
@@ -227,12 +227,12 @@
 }
 
 .form__input {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", sans-serif;
   font-size: 17px;
   line-height: 18px;
   width: 100%;
   border: none;
-  box-shadow: inset 0px -2px 0px #000000;
+  box-shadow: inset 0 -2px 0 #000000;
   height: 52px;
   box-sizing: border-box;
   position: relative;
@@ -259,6 +259,7 @@
     border-radius: 50%;
     content: "";
   }
+
   &[type="checkbox"]:checked + .form__mark::after {
     position: absolute;
     top: 9px;
@@ -270,8 +271,9 @@
     content: "";
   }
 
-  &:hover, &:active {
-    box-shadow: inset 0px -2px 0px $main-color;
+  &:hover,
+  &:active {
+    box-shadow: inset 0 -2px 0 $main-color;
   }
 }
 
@@ -304,7 +306,7 @@
 }
 
 .form__textarea {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", sans-serif;
   font-size: 17px;
   line-height: 18px;
   border: 2px solid #444444;

@@ -79,7 +79,7 @@
 }
 
 .product__list::after {
-  content:  "";
+  content: "";
   position: absolute;
   border-bottom: 1px solid #ececec;
   width: 100%;
@@ -160,7 +160,6 @@
 }
 
 .product__info {
-
   @media (min-width: $tablet-width) {
     width: 42%;
   }

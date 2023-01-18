@@ -13,12 +13,12 @@
   }
 
   &:hover .card__info {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     transition: 0.2s;
   }
 
   &:active .card__info {
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -87,7 +87,7 @@
   }
 }
 
-.card__amount{
+.card__amount {
   font-size: 15px;
 
   @media (min-width: $tablet-width) {

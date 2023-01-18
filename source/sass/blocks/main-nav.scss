@@ -11,13 +11,12 @@
     left: 4px;
     width: 20px;
     height: 2px;
-    background-color: #231F20;
-    box-shadow: 0 6px 0 0 #231F20, 0 12px 0 0 #231F20;
+    background-color: #231f20;
+    box-shadow: 0 6px 0 0 #231f20, 0 12px 0 0 #231f20;
     transition: 0.2s;
   }
 
   &--opened .main-nav__toggle {
-
     &::before,
     &::after {
       content: "";
@@ -72,13 +71,13 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    gap: 0px;
+    gap: 0;
   }
 }
 
 .main-nav__item {
   @media (max-width: $tablet-width) {
-    box-shadow: 0px 1px 0px #ECECEC, inset 0px 1px 0px #ECECEC;
+    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
     padding-top: 28px;
     padding-bottom: 27px;
     padding-left: 76px;
@@ -87,13 +86,13 @@
   @media (min-width: $desktop-width) {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 35px
+    padding-left: 35px;
   }
 }
 
 .main-nav__item:not(:last-child) {
   @media (min-width: $desktop-width) {
-    box-shadow: 1px 0px 0px #ECECEC;
+    box-shadow: 1px 0 0 #ececec;
     padding-right: 36px;
     padding-left: 0;
   }

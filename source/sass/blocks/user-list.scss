@@ -22,10 +22,10 @@
 }
 
 .user-list__item:not(:last-child) {
-  box-shadow: 0px 1px 0px #ECECEC, inset 0px 1px 0px #ECECEC;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   @media (min-width: $tablet-width) {
-    box-shadow: 1px 0px 0px #ECECEC, inset 1px 0px 0px #ECECEC;
+    box-shadow: 1px 0 0 #ececec, inset 1px 0 0 #ececec;
   }
 }
 
@@ -33,15 +33,6 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-}
-
-.user-list__icon {
-  position: absolute;
-  left: 30px;
-  top: 32px;
-  color: $black;
-  opacity: 0.2;
-  height: 18px;
 }
 
 .user-list__icon {
@@ -85,6 +76,7 @@
     opacity: 1;
     transition: 0.2s;
   }
+
   &:hover .user-list__text--search {
     opacity: 0.6;
     transition: 0.2s;
@@ -94,6 +86,7 @@
     color: $main-color;
     opacity: 0.3;
   }
+
   &:active .user-list__text--search {
     opacity: 0.3;
   }
@@ -111,6 +104,7 @@
     opacity: 1;
     transition: 0.2s;
   }
+
   &:hover .user-list__text--cart {
     opacity: 0.6;
     transition: 0.2s;
@@ -120,6 +114,7 @@
     color: $main-color;
     opacity: 0.3;
   }
+
   &:active .user-list__text--cart {
     opacity: 0.3;
   }
