@@ -6,9 +6,23 @@
   content: "";
   position: absolute;
   background-image: url("../../img/saw-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
   width: 100%;
   height: 6px;
   bottom: -45px;
+
+  @media (min-width: $tablet-width) {
+    background-size: auto 17px;
+    bottom: -68px;
+    height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: auto 23px;
+    bottom: -67px;
+    height: 23px;
+  }
 }
 
 .reviews__wrapper {

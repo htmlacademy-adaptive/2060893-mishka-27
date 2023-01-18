@@ -36,6 +36,7 @@
   margin-bottom: 27px;
   font-size: 17px;
   line-height: 24px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -50,9 +51,32 @@
     margin-bottom: 27px;
     padding-right: 50px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/video-icon.svg");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 22px;
+    left: -57px;
+    top: 1vh;
+
+    @media (min-width: $tablet-width) {
+      top: -2px;
+      left: -65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: auto;
+      bottom: 50px;
+      left: 0;
+    }
+  }
 }
 
-.video__preview {
+.video__content {
+  width: 100%;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {

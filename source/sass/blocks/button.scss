@@ -15,10 +15,12 @@
   text-align: center;
   text-decoration: none;
   color: $text;
+  cursor: pointer;
 
   &:hover {
     background: $text;
     color: $white;
+    transition: 0.2s;
   }
 
   &:active {

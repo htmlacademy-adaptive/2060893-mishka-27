@@ -1,3 +1,22 @@
+.catalog-hero {
+  position: relative;
+
+    &::after {
+      @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/saw-fill-desktop.svg");
+      bottom: -12px;
+      width: 100%;
+      height: 24px;
+    }
+      @media (min-width: $desktop-width) {
+        height: 34px;
+        bottom: -17px;
+    }
+  }
+}
+
 .catalog-hero__wrapper {
   display: flex;
   flex-direction: column;
@@ -27,7 +46,13 @@
 
     &:hover {
       background-color: #59D5BC;
-      padding-bottom: 38px;
+      transition: 0.2s;
+
+      & {
+        @media (min-width: $tablet-width) {
+          transform: translateY(-5px);
+        }
+      }
     }
   }
 
@@ -36,8 +61,22 @@
 
     &:hover {
       background-color: #46C1AE;
-      padding-bottom: 38px;
+      transition: 0.2s;
+
+      & {
+        @media (min-width: $tablet-width) {
+          transform: translateY(-5px);
+        }
+      }
     }
+  }
+
+  &:hover .catalog-hero__icon {
+    opacity: 0.7;
+  }
+
+  &:active .catalog-hero__icon {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
@@ -69,14 +108,6 @@
   right: 36px;
   color: #149080;
   opacity: 0.5;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 
   @media (min-width: $tablet-width) {
     top: 30px;

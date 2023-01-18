@@ -1,24 +1,31 @@
 .contacts__wrapper {
+  position: relative;
+
   @media (min-width: $desktop-width) {
-    position: relative;
     margin-right: 50px;
     margin-left: 113px;
     margin-bottom: 105px;
     padding-top: 79px;
   }
 
-  // &::before {
-  //   @media (min-width: $tablet-width) {
-  //     content: "";
-  //     position: absolute;
-  //     background-image: url("../../img/flag.svg");
-  //     background-repeat: no-repeat;
-  //     width: 47px;
-  //     height: 81px;
-  //     top: 0;
-  //     right: 0;
-  //   }
-  // }
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/flag.svg");
+      background-repeat: no-repeat;
+      width: 47px;
+      height: 81px;
+      top: -26px;
+      right: 53px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 62px;
+      right: auto;
+      left: 0;
+    }
+  }
 }
 
 .contacts iframe {
@@ -98,35 +105,20 @@
 
 .contacts__value {
   margin: 0;
+}
 
-  &--email {
-    position: relative;
-  }
+.contacts__email {
+  color: $black;
+  text-decoration-color: $main-color;
+  text-underline-offset: 5px;
 
-  &--email::after {
-    content: "";
-    position: absolute;
-    border-bottom: 1px solid $main-color;
-    width: 167px;
-    left: 0;
-    bottom: 0;
-
-    @media (min-width: $tablet-width) {
-      width: 204px;
-      bottom: 60px;
-    }
-
-    @media (min-width: $desktop-width) {
-      bottom: 0;
-    }
-  }
-
-  &--email:hover {
+  &:hover {
     color: #46c1ae;
+    transition: 0.2s;
   }
 
-  &--email:active {
-    opacity: 0.1;
+  &:active {
+    text-decoration-color: rgba(99, 209, 187, 0.1);
   }
 }
 

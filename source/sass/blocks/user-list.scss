@@ -83,9 +83,11 @@
   &:hover .user-list__icon {
     color: $main-color;
     opacity: 1;
+    transition: 0.2s;
   }
   &:hover .user-list__text--search {
     opacity: 0.6;
+    transition: 0.2s;
   }
 
   &:active .user-list__icon {
@@ -107,9 +109,11 @@
   &:hover .user-list__icon {
     color: $main-color;
     opacity: 1;
+    transition: 0.2s;
   }
   &:hover .user-list__text--cart {
     opacity: 0.6;
+    transition: 0.2s;
   }
 
   &:active .user-list__icon {

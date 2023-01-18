@@ -1,5 +1,5 @@
 .hero__wrapper {
-  background-color: #f9f9f9;
+  background-color: $whitef1;
   min-height: 373px;
 
   @media (min-width: $tablet-width) {
@@ -13,13 +13,14 @@
   &--form {
     min-height: auto;
   }
-}
 
-.hero__wrapper--image {
-  background-image: url("../../img/hero-mobile.jpg");
-  background-position: center -10px;
-  background-repeat: no-repeat;
-  background-size: auto;
+  &--image {
+    background-image: url("../../img/hero-mobile.jpg");
+    background-position: center -10px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #f9f9f9;
+  }
 }
 
 .hero__title {
