@@ -111,10 +111,10 @@
   color: $black;
   text-decoration-color: $main-color;
   text-underline-offset: 5px;
+  transition: 0.2s;
 
   &:hover {
     color: #46c1ae;
-    transition: 0.2s;
   }
 
   &:active {

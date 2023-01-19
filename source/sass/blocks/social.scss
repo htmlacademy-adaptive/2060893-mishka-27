@@ -22,10 +22,10 @@
 
 .social__icon {
   color: #231f20;
+  transition: 0.2s;
 
   &:hover {
     color: #46c1ae;
-    transition: 0.2s;
   }
 
   &:active {

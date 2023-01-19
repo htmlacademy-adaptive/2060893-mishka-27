@@ -10,10 +10,10 @@
   align-items: center;
   gap: 27px;
   text-decoration: none;
+  transition: 0.2s;
 
   &:hover .copyright__icon {
     color: #46c1ae;
-    transition: 0.2s;
   }
 
   &:active .copyright__icon {
@@ -23,4 +23,5 @@
 
 .copyright__icon {
   color: $main-color;
+  transition: 0.2s;
 }

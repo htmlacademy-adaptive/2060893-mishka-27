@@ -99,6 +99,8 @@
 }
 
 .main-nav__link {
+  transition: 0.2s;
+
   @media (min-width: $desktop-width) {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -106,7 +108,6 @@
 
   &:hover {
     opacity: 0.6;
-    transition: 0.2s;
   }
 
   &:active {

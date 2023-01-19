@@ -29,10 +29,10 @@
 .main-footer__link {
   text-decoration: none;
   color: $black;
+  transition: 0.2s;
 
   &:hover {
     color: #46c1ae;
-    transition: 0.2s;
   }
 
   &:active {

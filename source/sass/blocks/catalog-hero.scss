@@ -44,10 +44,10 @@
 
   &--interior {
     background-color: $main-color;
+    transition: 0.2s;
 
     &:hover {
       background-color: #59d5bc;
-      transition: 0.2s;
 
       @media (min-width: $tablet-width) {
         transform: translateY(-5px);
@@ -57,10 +57,10 @@
 
   &--toys {
     background-color: #56c3b2;
+    transition: 0.2s;
 
     &:hover {
       background-color: #46c1ae;
-      transition: 0.2s;
 
       @media (min-width: $tablet-width) {
         transform: translateY(-5px);
