@@ -26,8 +26,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 225px;
-    margin-left: 225px;
+    max-width: 1050px;
+    padding-left: 225px;
+    padding-right: 225px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -122,17 +125,17 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-top: 50px;
+    padding-right: 0;
+    padding-bottom: 50px;
+    padding-left: 0;
   }
 
   &:nth-child(2n) {
     @media (min-width: $tablet-width) {
       background-color: $whitef1;
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
     }
   }
 
@@ -185,6 +188,7 @@
 
 .form__container {
   @media (min-width: $tablet-width) {
+    @include wrapper-margin;
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 120px;
@@ -192,6 +196,10 @@
 
   @media (min-width: $desktop-width) {
     column-gap: 70px;
+    max-width: 1050px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &--tel {
@@ -211,7 +219,6 @@
 
     @media (min-width: $tablet-width) {
       align-items: center;
-      margin: 0;
       column-gap: 110px;
     }
 
@@ -283,8 +290,15 @@
   }
 
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     box-shadow: inset 0 -2px 0 $main-color;
+    outline: none;
+  }
+
+  &:active,
+  &:focus {
+    color: $text;
   }
 
   &--gray {
@@ -316,14 +330,20 @@
   @media (min-width: $desktop-width) {
     margin-top: 49px;
     margin-bottom: 50px;
-    margin-left: 114px;
-    gap: 165px;
+    padding-left: 110px;
+    gap: 140px;
+  }
+}
+
+.form__submit-button {
+  @media (min-width: $desktop-width) {
+    max-width: 230px;
   }
 }
 
 .form__textarea {
   @include open-sans;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 18px;
   border: 2px solid $text;
   width: 100%;
@@ -333,7 +353,15 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    font-size: 19px;
     margin: 0;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $main-color;
+    outline: none;
   }
 }
 

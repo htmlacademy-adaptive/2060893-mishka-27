@@ -36,6 +36,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
   }
 
   @media (min-width: $desktop-width) {

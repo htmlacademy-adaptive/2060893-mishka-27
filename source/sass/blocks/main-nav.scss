@@ -45,6 +45,7 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
+    width: auto;
     display: flex;
     position: static;
   }
@@ -81,6 +82,7 @@
 
 .main-nav__link {
   transition: 0.2s;
+  margin: 0;
 
   @media (max-width: $tablet-width) {
     padding-top: 28px;
@@ -91,9 +93,8 @@
   @media (min-width: $desktop-width) {
     border-right: 1px solid $whiteec;
     padding-top: 32px;
-    padding-right: 35px;
+    padding-right: 32px;
     padding-bottom: 32px;
-    padding-left: 50px;
   }
 
   &--secondary {

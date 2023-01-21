@@ -35,3 +35,10 @@
 @mixin open-sans {
   font-family: "Open Sans", sans-serif;
 }
+
+@mixin max-width {
+  max-width: 1050px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}

@@ -20,13 +20,15 @@
   transition: 0.2s;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 22px;
     padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
     @include position-absolute;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 0;
+    top: 30%;
     left: 47%;
   }
 
