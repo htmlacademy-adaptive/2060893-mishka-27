@@ -37,7 +37,7 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link link" href="form.html">
+              <a class="main-nav__link main-nav__link--secondary link" href="form.html">
                 Вязание на заказ
               </a>
             </li>
@@ -82,7 +82,7 @@
       <!-- Hero block -->
 
       <section class="hero">
-        <div class="hero__wrapper wrapper hero__wrapper wrapper--form">
+        <div class="hero__wrapper hero__wrapper--form">
           <h1 class="hero__title hero__title--inner">Вязание на заказ</h1>
         </div>
       </section>
@@ -90,7 +90,7 @@
       <!-- Form -->
 
       <section class="form">
-        <div class="form__wrapper wrapper">
+        <div class="form__wrapper">
           <h2 class="visually-hidden">Форма для отправления заказа.</h2>
           <p class="form__prompt">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
             свяжемся с вами,
@@ -133,42 +133,42 @@
                     <li class="form__item">
                       <label class="form__control">
                         <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="white" checked>
-                        <span class="form__mark"></span>
+                        <span class="form__mark form__mark--gray"></span>
                         <strong class="form__text">Белый</strong>
                       </label>
                     </li>
                     <li class="form__item">
                       <label class="form__control">
                         <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="grey" checked>
-                        <span class="form__mark"></span>
+                        <span class="form__mark form__mark--gray"></span>
                         <strong class="form__text">Серый</strong>
                       </label>
                     </li>
                     <li class="form__item">
                       <label class="form__control">
                         <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="tiffany">
-                        <span class="form__mark"></span>
+                        <span class="form__mark form__mark--gray"></span>
                         <strong class="form__text">Тиффани</strong>
                       </label>
                     </li>
                     <li class="form__item">
                       <label class="form__control">
                         <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="black">
-                        <span class="form__mark"></span>
+                        <span class="form__mark form__mark--gray"></span>
                         <strong class="form__text">Черный</strong>
                       </label>
                     </li>
                     <li class="form__item">
                       <label class="form__control">
                         <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="pink">
-                        <span class="form__mark"></span>
+                        <span class="form__mark form__mark--gray"></span>
                         <strong class="form__text">Розовый</strong>
                       </label>
                     </li>
                     <li class="form__item">
                       <label class="form__control">
                         <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="orange">
-                        <span class="form__mark"></span>
+                        <span class="form__mark form__mark--gray"></span>
                         <strong class="form__text">Оранжевый</strong>
                       </label>
                     </li>
@@ -207,7 +207,7 @@
                 <div class="form__container form__container--tel">
                   <legend class="form__title">Тел</legend>
                   <label class="form__control">
-                    <input class="form__input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="telephone">
+                    <input class="form__input form__input--gray" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="telephone">
                     <svg class="form__icon" width="25" height="24" viewBox="0 0 25 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path d="M17.4395 24C17.0363 24 16.7339 24 16.3306 24C11.3911 23.4074 7.7621 21.1358 5.14113 18.2717C2.52016 15.4075 0.403226 11.7532 0 6.7162C0 6.22237 0 5.82731 0 5.33349C0.100806 4.44461 0.504032 3.85202 1.10887 3.25943C1.71371 2.56808 2.72177 1.77796 3.62903 1.6792C4.33468 1.6792 5.44355 2.17302 5.84677 2.76561C6.25 3.25943 6.45161 4.34584 6.65323 5.13596C6.85484 6.02484 7.25806 7.11125 7.15726 7.90137C6.95565 9.08655 5.34274 9.58037 4.93952 10.4693C6.55242 14.1235 9.07258 16.889 12.5 18.6667C13.3065 18.1729 14.1129 16.7902 15.3226 16.7902C15.7258 16.7902 16.3306 16.9877 16.7339 17.0865C17.2379 17.1852 17.6411 17.3828 18.0444 17.5803C18.75 17.8766 20.0605 18.1729 20.4637 18.7655C20.8669 19.3581 21.1694 20.3457 21.0685 20.9383C20.7661 22.2222 18.6492 23.6049 17.4395 24Z" />
                       <path d="M12.6008 1.48147C18.5484 1.48147 23.4879 6.22217 23.4879 12.1481H25C25 5.43205 19.4556 0 12.6008 0V1.48147Z" />
@@ -219,7 +219,7 @@
                 <div class="form__container form__container--email">
                   <legend class="form__title">E-mail</legend>
                   <label class="form__control">
-                    <input class="form__input" type="email" placeholder="Ваш Email*" name="e-mail">
+                    <input class="form__input form__input--gray" type="email" placeholder="Ваш Email*" name="e-mail">
                     <svg class="form__icon" width="32" height="21" viewBox="0 0 32 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z" />
                     </svg>
@@ -252,7 +252,7 @@
       <!-- Footer -->
 
       <footer class="main-footer">
-        <div class="main-footer__wrapper wrapper">
+        <div class="main-footer__wrapper">
           <div class="main-footer__logo"> <!-- for tablet and desktop -->
             <a class="main-footer__link" href="index.html">
               <svg class="main-footer__icon" width="102" height="34" viewBox="0 0 102 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
