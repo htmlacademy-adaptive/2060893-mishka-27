@@ -2,8 +2,7 @@
   position: relative;
 
   &::after {
-    content: "";
-    position: absolute;
+    @include position-absolute;
     background-image: url("../../img/saw-line.svg");
     background-size: auto 6px;
     background-repeat: repeat-x;
@@ -78,8 +77,7 @@
   text-align: left;
 
   &--eco::before {
-    content: "";
-    position: absolute;
+    @include position-absolute;
     background-image: url("../../img/flower-icon.svg");
     width: 33px;
     height: 38px;
@@ -88,8 +86,7 @@
   }
 
   &--scandin::before {
-    content: "";
-    position: absolute;
+    @include position-absolute;
     background-image: url("../../img/scandin-icon.svg");
     width: 47px;
     height: 27px;
@@ -98,8 +95,7 @@
   }
 
   &--likes::before {
-    content: "";
-    position: absolute;
+    @include position-absolute;
     background-image: url("../../img/likes-icon.svg");
     width: 34px;
     height: 27px;
@@ -108,8 +104,7 @@
   }
 
   &--knit::before {
-    content: "";
-    position: absolute;
+    @include position-absolute;
     background-image: url("../../img/knit-icon.svg");
     width: 35px;
     height: 34px;
@@ -118,8 +113,7 @@
   }
 
   &--domestic::before {
-    content: "";
-    position: absolute;
+    @include position-absolute;
     background-image: url("../../img/rocket-icon.svg");
     width: 55px;
     height: 23px;
@@ -128,8 +122,7 @@
   }
 
   &--gift::before {
-    content: "";
-    position: absolute;
+    @include position-absolute;
     background-image: url("../../img/gift-icon.svg");
     width: 33px;
     height: 32px;

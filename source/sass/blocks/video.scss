@@ -1,6 +1,6 @@
 .video__wrapper {
   @include wrapper-margin;
-  border: 1px solid #ececec;
+  border: 1px solid $whiteec;
   margin-bottom: 58px;
   padding-bottom: 33px;
 
@@ -31,12 +31,14 @@
 }
 
 .video__title {
+  position: relative;
   margin-top: 21px;
   margin-left: 91px;
   margin-bottom: 27px;
   font-size: 17px;
   line-height: 24px;
-  position: relative;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -49,35 +51,37 @@
     margin-top: 96px;
     margin-left: 79px;
     margin-bottom: 27px;
-    padding-right: 50px;
+    padding-right: 100px;
   }
 
   &::before {
-    content: "";
-    position: absolute;
+    @include position-absolute;
     background-image: url("../../img/video-icon.svg");
     background-repeat: no-repeat;
     width: 32px;
     height: 22px;
     left: -57px;
-    top: 1vh;
+    top: 0;
 
     @media (min-width: $tablet-width) {
-      top: -2px;
+      top: 0;
       left: -65px;
     }
 
     @media (min-width: $desktop-width) {
-      top: auto;
-      bottom: 50px;
+      top: -50px;
       left: 0;
     }
   }
 }
 
 .video__content {
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 35px;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 
   @media (min-width: $tablet-width) {
     order: -1;
@@ -93,6 +97,7 @@
 .video__description {
   font-weight: 400;
   font-size: 13px;
+  margin-top: 0;
   margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {

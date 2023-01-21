@@ -10,8 +10,7 @@
 
   &::before {
     @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
+      @include position-absolute;
       background-image: url("../../img/flag.svg");
       background-repeat: no-repeat;
       width: 47px;
@@ -40,7 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
+    @include position-absolute;
     top: 0;
     right: 0;
     width: 527px;
@@ -114,7 +113,7 @@
   transition: 0.2s;
 
   &:hover {
-    color: #46c1ae;
+    color: $darken-main;
   }
 
   &:active {

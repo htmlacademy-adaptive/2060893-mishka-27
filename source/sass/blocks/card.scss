@@ -1,5 +1,5 @@
 .card {
-  border: 1px solid #ececec;
+  border: 1px solid $whiteec;
   min-width: 260px;
   transition: 0.2s;
 
@@ -49,6 +49,7 @@
 .card__info {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   row-gap: 41px;
   padding-top: 27px;
   padding-right: 27px;
@@ -79,9 +80,8 @@
   position: relative;
 
   &::before {
-    content: "";
-    position: absolute;
-    border-bottom: 1px solid #ececec;
+    @include position-absolute;
+    border-bottom: 1px solid $whiteec;
     width: 100%;
     top: -23px;
   }

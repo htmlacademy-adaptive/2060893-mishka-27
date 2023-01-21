@@ -3,8 +3,7 @@
 }
 
 .reviews::after {
-  content: "";
-  position: absolute;
+  @include position-absolute;
   background-image: url("../../img/saw-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;

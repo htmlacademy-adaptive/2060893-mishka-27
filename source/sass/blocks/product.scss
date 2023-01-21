@@ -79,9 +79,8 @@
 }
 
 .product__list::after {
-  content: "";
-  position: absolute;
-  border-bottom: 1px solid #ececec;
+  @include position-absolute;
+  border-bottom: 1px solid $whiteec;
   width: 100%;
   top: 32px;
 }
@@ -107,7 +106,7 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
+    @include position-absolute;
     margin: 0;
     top: 20%;
     right: 0;

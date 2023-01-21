@@ -4,7 +4,6 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    @include wrapper-margin;
     flex-direction: row;
     position: relative;
   }
@@ -22,11 +21,13 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 22px;
+    padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    left: 46%;
+    @include position-absolute;
+    padding-left: 0;
+    left: 47%;
   }
 
   &:hover {

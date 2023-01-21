@@ -21,15 +21,15 @@
 }
 
 .social__icon {
-  color: #231f20;
+  color: $dark-gray;
   transition: 0.2s;
 
   &:hover {
-    color: #46c1ae;
+    color: $darken-main;
   }
 
   &:active {
-    color: #46c1ae;
+    color: $darken-main;
     opacity: 0.3;
   }
 }

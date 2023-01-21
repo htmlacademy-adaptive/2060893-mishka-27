@@ -22,20 +22,20 @@
 }
 
 .user-list__item:not(:last-child) {
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  box-shadow: 0 1px 0 $whiteec, inset 0 1px 0 $whiteec;
 
   @media (min-width: $tablet-width) {
-    box-shadow: 1px 0 0 #ececec, inset 1px 0 0 #ececec;
+    box-shadow: 1px 0 0 $whiteec, inset 1px 0 0 $whiteec;
   }
 }
 
-.user-list__text
-
+.user-list__text {
   &--search {
-  transition: 0.2s;
+    transition: 0.2s;
 
-  @media (min-width: $tablet-width) {
-    display: none;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &--cart {
@@ -44,7 +44,7 @@
 }
 
 .user-list__icon {
-  position: absolute;
+  @include position-absolute;
   left: 30px;
   top: 32px;
   color: $black;
@@ -106,6 +106,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 32px;
+    padding-right: 50px;
     padding-bottom: 32px;
     padding-left: 84px;
   }
