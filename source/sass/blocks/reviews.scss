@@ -1,5 +1,17 @@
 .reviews {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/review-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .reviews::after {

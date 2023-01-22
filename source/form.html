@@ -22,8 +22,11 @@
       <!-- Logo -->
 
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image-mobile" src="img/mishka-logo-header-mobile.svg" width="86" height="35"
-          alt="Магазин «Мишка».">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-header-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-header-tablet.svg">
+          <img class="main-header__logo-image" src="img/mishka-logo-header-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
+        </picture>
       </a>
 
       <!-- Navigation -->

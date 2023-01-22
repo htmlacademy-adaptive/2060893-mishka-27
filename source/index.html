@@ -20,8 +20,12 @@
       <!-- Logo -->
 
       <a class="main-header__logo">
-        <img class="main-header__logo-image-mobile" src="img/mishka-logo-header-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
-      </a>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-header-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-header-tablet.svg">
+          <img class="main-header__logo-image" src="img/mishka-logo-header-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
+        </picture>
+        </a>
 
       <!-- Navigation -->
 
@@ -128,8 +132,12 @@
               </div>
             </dl>
             <div class="product__content">
-              <img class="product__image" width="260" height="315" src="img/triple-set-mobile.jpg" alt="Три вязнных корзинки разного размера, вложенные друг в друга">
-              <span class="product__price">Цена: 990 руб.</span>
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg">
+                <img class="product__image" width="260" height="315" src="img/triple-set-mobile.jpg" alt="Три вязнных корзинки разного размера, вложенные друг в друга">
+              </picture>
+                <span class="product__price">Цена: 990 руб.</span>
               <button class="product__button button" type="button">
                 Заказать
               </button>

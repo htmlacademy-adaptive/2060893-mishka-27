@@ -21,7 +21,11 @@
       <!-- Logo -->
 
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image-mobile" src="img/mishka-logo-header-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-header-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-header-tablet.svg">
+          <img class="main-header__logo-image" src="img/mishka-logo-header-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
+        </picture>
       </a>
 
       <!-- Navigation -->
@@ -98,7 +102,11 @@
             <!-- card product -->
 
             <li class="catalog__item card">
-              <img class="card__picture" src="img/product-mobile-1.jpg" width="260" height="195" alt="Вязанная игрушка зайчика.">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/product-desktop-1.jpg 1x, img/product-desktop-1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-tablet-1.jpg 1x, img/product-tablet-1@2x.jpg 2x">
+                <img class="card__picture" src="img/product-mobile-1.jpg" srcset="img/product-mobile-1@2x.jpg" width="260" height="195" alt="Вязанная игрушка зайчика.">
+              </picture>
               <dl class="card__info">
                 <div class="card__about">
                   <a class="card__link" href="">
@@ -127,7 +135,11 @@
             </li>
 
             <li class="catalog__item card">
-              <img class="card-picture" src="img/product-mobile-2.jpg" width="260" height="195" alt="Скрученные полотенца внутри вязанной корзинки.">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/product-desktop-2.jpg 1x, img/product-desktop-2@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-tablet-2.jpg 1x, img/product-tablet-2@2x.jpg 2x">
+                <img class="card__picture" src="img/product-mobile-2.jpg" srcset="img/product-mobile-2@2x.jpg" width="260" height="195" alt="Скрученные полотенца внутри вязанной корзинки.">
+              </picture>
               <dl class="card__info">
                 <div class="card__about">
                   <a class="card__link" href="">
@@ -155,8 +167,12 @@
             </li>
 
             <li class="catalog__item card">
-              <img class="card-picture" src="img/product-mobile-3.jpg" width="260" height="195" alt="Вязанная корзинка с плюшевыми игрушками внутри.">
-              <dl class="card__info">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/product-desktop-3.jpg 1x, img/product-desktop-3@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-tablet-3.jpg 1x, img/product-tablet-3@2x.jpg 2x">
+                <img class="card__picture" src="img/product-mobile-3.jpg" srcset="img/product-mobile-3@2x.jpg" width="260" height="195" alt="Вязанная корзинка с плюшевыми игрушками внутри.">
+              </picture>
+                <dl class="card__info">
                 <div class="card__about">
                   <a class="card__link" href="">
                     <h3 class="card__title">Большая корзинка для игрушек</h3>
