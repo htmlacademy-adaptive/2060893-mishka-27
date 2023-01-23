@@ -1,7 +1,7 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 let modal = document.querySelector('.modal');
-let productButton = document.querySelector('.product__button');
+let productButton = document.querySelector('.modal-button');
 
 navMain.classList.remove('main-nav--nojs');
 
