@@ -74,6 +74,17 @@
   }
 }
 
+.product__list {
+  position: relative;
+}
+
+.product__list::after {
+  @include position-absolute;
+  border-bottom: 1px solid $whiteec;
+  width: 100%;
+  top: 32px;
+}
+
 .product__list:not(:last-of-type) {
   margin-bottom: 30px;
 }
@@ -95,7 +106,7 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
+    @include position-absolute;
     margin: 0;
     top: 20%;
     right: 0;

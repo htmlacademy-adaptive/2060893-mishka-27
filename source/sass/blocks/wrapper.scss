@@ -1,0 +1,12 @@
+.wrapper {
+  @media (min-width: $tablet-width) {
+    @include wrapper-margin;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

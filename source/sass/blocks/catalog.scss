@@ -1,5 +1,6 @@
 .catalog__wrapper {
   @include wrapper-margin;
+  margin-top: 30px;
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -24,7 +25,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 318px 317px 318px;
+    justify-content: center;
     column-gap: 51px;
   }
 }

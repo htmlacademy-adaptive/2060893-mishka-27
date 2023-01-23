@@ -1,5 +1,5 @@
 @mixin visually-hidden {
-  position: absolute;
+  @include position-absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -25,4 +25,20 @@
     margin-right: 50px;
     margin-left: 50px;
   }
+}
+
+@mixin position-absolute {
+  position: absolute;
+  content: "";
+}
+
+@mixin open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+@mixin max-width {
+  max-width: 1050px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }

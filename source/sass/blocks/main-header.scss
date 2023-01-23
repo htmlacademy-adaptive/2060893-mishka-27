@@ -1,5 +1,5 @@
 .main-header {
-  @include wrapper-margin;
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -17,14 +17,19 @@
   align-self: center;
   padding-top: 22px;
   padding-bottom: 22px;
+  transition: 0.2s;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 22px;
+    padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    left: 45%;
+    @include position-absolute;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    top: 30%;
+    left: 47%;
   }
 
   &:hover {

@@ -2,6 +2,7 @@
   @media (min-width: $tablet-width) {
     order: -1;
     margin-left: auto;
+    gap: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,10 +12,119 @@
 }
 
 .user-list__item {
-  @media (max-width: $tablet-width) {
+  position: relative;
 
-    padding-top: 28px;
+  @media (max-width: $tablet-width) {
+    padding-top: 27px;
     padding-bottom: 27px;
-    padding-left: 46px;
+    padding-left: 76px;
+  }
+}
+
+.user-list__item:not(:last-child) {
+  box-shadow: 0 1px 0 $whiteec, inset 0 1px 0 $whiteec;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: 1px 0 0 $whiteec, inset 1px 0 0 $whiteec;
+  }
+}
+
+.user-list__text {
+  &--search {
+    transition: 0.2s;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--cart {
+    transition: 0.2s;
+  }
+}
+
+.user-list__icon {
+  @include position-absolute;
+  left: 30px;
+  top: 32px;
+  color: $black;
+  opacity: 0.2;
+  width: 18px;
+  height: 18px;
+  transition: 0.2s;
+
+  &--search {
+    @media (min-width: $tablet-width) {
+      position: static;
+    }
+  }
+
+  &--cart {
+    width: 21px;
+
+    @media (min-width: $tablet-width) {
+      top: 3px;
+      left: 31px;
+    }
+  }
+}
+
+.user-list__search {
+  transition: 0.2s;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35px;
+    padding-right: 32px;
+    padding-bottom: 35px;
+    padding-left: 32px;
+  }
+
+  &:hover .user-list__icon {
+    color: $main-color;
+    opacity: 1;
+  }
+
+  &:hover .user-list__text--search {
+    opacity: 0.6;
+  }
+
+  &:active .user-list__icon {
+    color: $main-color;
+    opacity: 0.3;
+  }
+
+  &:active .user-list__text--search {
+    opacity: 0.3;
+  }
+}
+
+.user-list__cart {
+  transition: 0.2s;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 84px;
+  }
+
+  &:hover .user-list__icon {
+    color: $main-color;
+    opacity: 1;
+  }
+
+  &:hover .user-list__text--cart {
+    opacity: 0.6;
+  }
+
+  &:active .user-list__icon {
+    color: $main-color;
+    opacity: 0.3;
+  }
+
+  &:active .user-list__text--cart {
+    opacity: 0.3;
   }
 }

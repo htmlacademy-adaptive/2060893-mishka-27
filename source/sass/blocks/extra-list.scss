@@ -2,18 +2,24 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    @include position-absolute;
     display: block;
-    position: absolute;
     left: auto;
     right: 0;
   }
 
   @media (min-width: $desktop-width) {
+    @include position-absolute;
     display: flex;
-    position: absolute;
-    top: 109px;
+    max-width: 1150px;
+    margin: 0 auto;
+    top: 90px;
     left: 0;
   }
+}
+
+.extra-list__item {
+  font-size: 15px;
 }
 
 .extra-list__link {
@@ -23,16 +29,38 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    text-decoration: none;
+    color: $black;
+    padding-top: 20px;
+    padding-right: 29px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+  }
+
+  &--secondary {
+    padding-left: 35px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .extra-list__delivery {
   font-size: 15px;
   color: $text;
+  font-weight: 400;
 
   @media (min-width: $desktop-width) {
-    position: absolute;
+    @include position-absolute;
     white-space: nowrap;
-    left: 800px;
+    top: 0;
+    right: 0;
+    padding-top: 20px;
+    padding-right: 50px;
   }
 }
