@@ -1,5 +1,22 @@
 .reviews {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/review-background.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/review-background@2x.jpg");
+      background-size: 350px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .reviews::after {

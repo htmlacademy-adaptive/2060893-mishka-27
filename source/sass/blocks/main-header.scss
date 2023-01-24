@@ -1,11 +1,9 @@
 .main-header {
-  position: relative;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,11 +23,11 @@
 
   @media (min-width: $desktop-width) {
     @include position-absolute;
-    padding-top: 0;
+    padding-top: 9px;
     padding-bottom: 0;
     padding-left: 0;
-    top: 30%;
-    left: 47%;
+    top: 0;
+    left: 44%;
   }
 
   &:hover {
@@ -38,5 +36,19 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.main-header__logo-image {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
   }
 }
