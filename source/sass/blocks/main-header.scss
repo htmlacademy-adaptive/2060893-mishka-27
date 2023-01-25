@@ -8,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    position: relative;
   }
 }
 
@@ -23,11 +24,12 @@
 
   @media (min-width: $desktop-width) {
     @include position-absolute;
-    padding-top: 9px;
+    padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
-    top: 0;
-    left: 44%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &:hover {

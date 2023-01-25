@@ -12,10 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1050px;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    @include max-width;
   }
 }
 
@@ -30,13 +27,13 @@
 
   @media (min-width: $tablet-width) {
     background-size: auto 17px;
-    bottom: -68px;
+    bottom: -85px;
     height: 17px;
   }
 
   @media (min-width: $desktop-width) {
     background-size: auto 23px;
-    bottom: -67px;
+    bottom: -90px;
     height: 23px;
   }
 }
