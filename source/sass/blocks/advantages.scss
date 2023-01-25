@@ -1,4 +1,5 @@
 .advantages {
+  @include max-width;
   position: relative;
 
   &::after {
