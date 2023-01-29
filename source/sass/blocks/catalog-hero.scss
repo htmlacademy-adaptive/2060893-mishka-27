@@ -35,10 +35,11 @@
   position: relative;
   padding-top: 25px;
   padding-left: 30px;
-  padding-right: 36px;
+  padding-right: 105px;
   padding-bottom: 31px;
   border: none;
   text-decoration-line: none;
+  min-width: 103px;
 
   &--interior {
     background-color: $main-color;
@@ -82,14 +83,12 @@
 }
 
 .catalog-hero__title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "PT Sans", sans-serif;
   color: $white;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
   margin-right: auto;
-  text-align: left;
-  max-width: 130px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

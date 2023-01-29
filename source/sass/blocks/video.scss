@@ -103,27 +103,31 @@
     margin-bottom: 0;
     max-height: 455px;
   }
+}
 
-  &::before {
-    @include position-absolute;
-    background-image: url("../../img/play-video.svg");
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 77px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 2;
-  }
+.video__play {
+  @include position-absolute;
+  background-image: url("../../img/play-video.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 100px;
+  height: 77px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+  padding: 0;
 
-  &:hover::before {
+  &:hover {
     background-size: 114px 85px;
     width: 115px;
     height: 85px;
   }
 
-  &:active::before {
+  &:active {
     background-size: 81px 62px;
     width: 81px;
     height: 62px;

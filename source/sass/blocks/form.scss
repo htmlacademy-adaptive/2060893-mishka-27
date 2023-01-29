@@ -65,6 +65,7 @@
   border: 2px solid $text;
   background-color: $white;
   box-sizing: border-box;
+  flex-shrink: 0;
 
   &--gray {
     @media (min-width: $tablet-width) {
@@ -115,16 +116,17 @@
 }
 
 .form__group {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding-right: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
   border: none;
+  gap: 34px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    gap: 24px;
     padding-top: 50px;
     padding-right: 0;
     padding-bottom: 50px;
@@ -134,7 +136,7 @@
   &:nth-child(2n) {
     @media (min-width: $tablet-width) {
       background-color: $whitef1;
-      width: 100vw;
+      width: 100%;
       margin-left: calc(50% - 50vw);
     }
   }
@@ -204,7 +206,6 @@
 
   &--tel {
     @media (min-width: $tablet-width) {
-      margin-bottom: 34px;
       align-items: center;
       column-gap: 133px;
     }
@@ -215,8 +216,6 @@
   }
 
   &--email {
-    margin-top: 34px;
-
     @media (min-width: $tablet-width) {
       align-items: center;
       column-gap: 110px;
@@ -289,6 +288,10 @@
     background-repeat: no-repeat;
   }
 
+  &:focus ~ .form__mark {
+    border-color: $main-color;
+  }
+
   &:hover,
   &:active,
   &:focus {
@@ -336,8 +339,10 @@
 }
 
 .form__submit-button {
-  @media (min-width: $desktop-width) {
-    max-width: 230px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 230px;
+    width: auto;
   }
 }
 
