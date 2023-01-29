@@ -2,7 +2,10 @@ let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 let modal = document.querySelector('.modal');
 let productButton = document.querySelector('.modal-button');
+<<<<<<< HEAD
 let map = document.querySelector('.contacts');
+=======
+>>>>>>> 68ab54979b4efed77f4277b995aa6629b82a72c6
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -25,5 +28,8 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+<<<<<<< HEAD
 
 map.classList.remove('contacts--nojs');
+=======
+>>>>>>> 68ab54979b4efed77f4277b995aa6629b82a72c6
