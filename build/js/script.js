@@ -2,6 +2,7 @@ let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 let modal = document.querySelector('.modal');
 let productButton = document.querySelector('.modal-button');
+
 let map = document.querySelector('.contacts');
 
 navMain.classList.remove('main-nav--nojs');
