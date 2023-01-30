@@ -26,7 +26,7 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/mishka-logo-header-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/mishka-logo-header-tablet.svg">
-          <img class="main-header__logo-image" src="img/mishka-logo-header-mobile.svg" width="86" height="35" alt="Магазин «Мишка».">
+          <img class="main-header__logo-image" src="img/mishka-logo-header-mobile.svg" width="86" height="35" alt="Магазин «Мишка»." loading="lazy">
         </picture>
       </a>
 
@@ -114,9 +114,8 @@
             <!-- type -->
 
               <fieldset class="form__group">
-                <legend class="form__title form__title--padding">Тип</legend>
                 <div class="form__container">
-
+                  <p class="form__title form__title--padding">Тип</p>
                   <ul class="form__list">
                     <li class="form__item">
                       <label class="form__control">
@@ -139,8 +138,8 @@
               <!-- color -->
 
               <fieldset class="form__group">
-                <legend class="form__title form__title--padding">Цвет</legend>
                 <div class="form__container">
+                  <p class="form__title form__title--padding">Цвет</p>
                   <ul class="form__list form__list--color">
                     <li class="form__item">
                       <label class="form__control">
@@ -193,7 +192,7 @@
 
               <fieldset class="form__group">
                 <div class="form__container">
-                  <legend class="form__title form__title--padding">ФИО</legend>
+                  <p class="form__title form__title--padding">ФИО</p>
                   <div class="form__data">
                     <label class="form__control form__control--data">
                       <strong class="form__text">Имя:</strong>
@@ -217,7 +216,7 @@
 
               <fieldset class="form__group">
                 <div class="form__container form__container--tel">
-                  <legend class="form__title">Тел</legend>
+                  <p class="form__title">Тел</p>
                   <label class="form__control">
                     <input class="form__input form__input--gray" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="telephone">
                     <svg class="form__icon" width="25" height="24" viewBox="0 0 25 24">
@@ -226,7 +225,7 @@
                   </label>
                 </div>
                 <div class="form__container form__container--email">
-                  <legend class="form__title">E-mail</legend>
+                  <p class="form__title">E-mail</p>
                   <label class="form__control">
                     <input class="form__input form__input--gray" type="email" placeholder="Ваш Email*" name="e-mail">
                     <svg class="form__icon" width="32" height="21" viewBox="0 0 32 21">
@@ -240,7 +239,7 @@
 
               <fieldset class="form__group">
                 <div class="form__container form__container--textarea">
-                  <legend class="form__title form__title--padding">Доп</legend>
+                  <p class="form__title form__title--padding">Доп</p>
                   <label class="form__control">
                     <textarea class="form__textarea" placeholder="Опишите все ваши пожелания к заказу" name="comment"></textarea>
                   </label>

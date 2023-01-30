@@ -26,7 +26,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1050px;
+    max-width: 700px;
     padding-left: 225px;
     padding-right: 225px;
     margin-right: auto;
@@ -40,6 +40,11 @@
   text-transform: uppercase;
   color: $main-color;
   padding: 0;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 68px;
+  }
 
   &::after {
     @media (max-width: $tablet-width) {
