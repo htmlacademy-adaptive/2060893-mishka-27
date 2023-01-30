@@ -16,7 +16,6 @@
   color: $text;
   cursor: pointer;
   transition: 0.2s;
-  white-space: nowrap;
 
   &:hover {
     background: $text;
@@ -25,5 +24,10 @@
 
   &:active {
     color: rgb(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $main-color;
   }
 }

@@ -27,7 +27,22 @@
   }
 }
 
-.contacts iframe {
+.contacts--nojs .contacts__map {
+  background-image: url("../../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/map-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/map-desktop.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.contacts__map iframe {
   border: none;
   display: block;
   margin-bottom: 41px;
@@ -47,6 +62,35 @@
     width: 527px;
     height: 457px;
   }
+}
+
+.contacts__img {
+  display: none;
+}
+
+.contacts--nojs .contacts__img {
+  display: block;
+  margin-bottom: 41px;
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include position-absolute;
+    top: 0;
+    right: 0;
+    width: 527px;
+    height: 457px;
+  }
+}
+
+.contacts--nojs iframe {
+  display: none;
 }
 
 .contacts__title {
