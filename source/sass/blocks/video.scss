@@ -68,7 +68,7 @@
 
   &::before {
     @include position-absolute;
-    background-image: url("../../img/video-icon.svg");
+    background-image: url("../img/video-icon.svg");
     background-repeat: no-repeat;
     width: 32px;
     height: 22px;
@@ -107,7 +107,7 @@
 
 .video__play {
   @include position-absolute;
-  background-image: url("../../img/play-video.svg");
+  background-image: url("../img/play-video.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   width: 100px;
