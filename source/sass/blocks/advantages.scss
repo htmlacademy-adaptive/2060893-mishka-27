@@ -4,7 +4,7 @@
 
   &::after {
     @include position-absolute;
-    background-image: url("../../img/saw-line.svg");
+    background-image: url("../img/saw-line.svg");
     background-size: auto 6px;
     background-repeat: repeat-x;
     width: 100%;
@@ -79,7 +79,7 @@
 
   &--eco::before {
     @include position-absolute;
-    background-image: url("../../img/flower-icon.svg");
+    background-image: url("../img/flower-icon.svg");
     width: 33px;
     height: 38px;
     top: -56px;
@@ -88,7 +88,7 @@
 
   &--scandin::before {
     @include position-absolute;
-    background-image: url("../../img/scandin-icon.svg");
+    background-image: url("../img/scandin-icon.svg");
     width: 47px;
     height: 27px;
     top: -53px;
@@ -97,7 +97,7 @@
 
   &--likes::before {
     @include position-absolute;
-    background-image: url("../../img/likes-icon.svg");
+    background-image: url("../img/likes-icon.svg");
     width: 34px;
     height: 27px;
     top: -48px;
@@ -106,7 +106,7 @@
 
   &--knit::before {
     @include position-absolute;
-    background-image: url("../../img/knit-icon.svg");
+    background-image: url("../img/knit-icon.svg");
     width: 35px;
     height: 34px;
     top: -52px;
@@ -115,7 +115,7 @@
 
   &--domestic::before {
     @include position-absolute;
-    background-image: url("../../img/rocket-icon.svg");
+    background-image: url("../img/rocket-icon.svg");
     width: 55px;
     height: 23px;
     top: -51px;
@@ -124,7 +124,7 @@
 
   &--gift::before {
     @include position-absolute;
-    background-image: url("../../img/gift-icon.svg");
+    background-image: url("../img/gift-icon.svg");
     width: 33px;
     height: 32px;
     top: -53px;
